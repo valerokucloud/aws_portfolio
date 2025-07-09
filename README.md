@@ -1,12 +1,12 @@
 # AV personal AWS Portfolio
 Welcome to my AWS Project Portfolio. Repository under construction.
-## Project Levels
+### Project Levels
 The projects are categorized into three levels:
 * Beginner
 * Intermediate
 * Advanced
 
-### Beginner projects:
+## Beginner projects:
 * Project 1: MyCV
   
   - **Description**: this project involves creating and setting up a bucket of static content and upload our personal CV.
