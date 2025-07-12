@@ -8,7 +8,7 @@ Beginner
  
 
 ## Project’s Author 
-    [Antonio Valero] (https://www.linkedin.com/in/avalero89/) 
+* [Antonio Valero](https://www.linkedin.com/in/avalero89/) 
 
  
 
