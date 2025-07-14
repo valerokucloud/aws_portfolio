@@ -1,16 +1,12 @@
-# 1. MyCV (static website using S3) + Project title 
+# 1. MyCV (static website using S3)
  
-
 ## Difficulty: Beginner
-
- 
 
 ## Project’s Author 
 * [Antonio Valero](https://www.linkedin.com/in/avalero89/) 
 
  
-## Objectives 
-
+## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
  
 
 ### Steps: 
