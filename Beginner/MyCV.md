@@ -48,7 +48,11 @@
 * [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
  
 
-## Project diagram 
+## Principal Architecture:
 
 ![principal_arch](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/principal_arch.png)
 
+
+## Future work Architecture:
+
+![principal_arch](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/principal_arch.png)
