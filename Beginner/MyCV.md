@@ -38,9 +38,9 @@
         *   Create a certificate through AWS Certificate Manager to support that naming (["thebestCV.com"]).
           
 6. (Future work) - Security.
-    *   (CloudFront). Applying features through AWS Web Application Firewall [https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html]
-    *   AWS Shield: managed DDoS protection service. It has two offerings: Standard and Advanced. [https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html]
-    *   Enabling CloudWatch logs for each service. [https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogsConcepts.html]
+    *   (CloudFront). Applying features through AWS Web Application Firewall: https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html
+    *   AWS Shield: managed DDoS protection service.It has two offerings: Standard and Advanced. https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html
+    *   Enabling CloudWatch logs for each service: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogsConcepts.html
  
 
 
