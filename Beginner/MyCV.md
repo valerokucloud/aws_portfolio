@@ -40,7 +40,7 @@
 6. (Future work) - Security.
     *   (CloudFront). Applying features through AWS Web Application Firewall [https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html]
     *   AWS Shield: managed DDoS protection service. It has two offerings: Standard and Advanced. [https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html]
-    *   Enabling CloudWatch logs for each service. []
+    *   Enabling CloudWatch logs for each service. [https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogsConcepts.html]
  
 
 
@@ -50,4 +50,5 @@
 
 ## Project diagram 
 
-(to review) 
+![principal_arch](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/principal_arch.png)
+
