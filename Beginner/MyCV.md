@@ -11,9 +11,11 @@
 
 ### Steps: 
 
+
 1. Create an S3 bucket
     * Enable static website hosting
     * Put the three files: index.html, index.css and avatar.png.
+
 
 2. (Optional) - Distribute the content using CloudFront:
     *   Create a CloudFront distribution.
@@ -28,12 +30,19 @@
 3. (Optional) - Monitoring the website through CloudWatch:
     *   Select "Per Distribution Metrics".
         *   In this case the relevants are: BytesDownloaded, Requests, 5xxErrorRate and 4xxErrorRate.
-        *   We could add more 
-            
+                            
 
-(...) 
-
+4. (Future work) - Implementing custom DNS with Route 53. It would be easier for you and others to remember if your URL was something like "thebestCV.com".
+    *   Register a new domain using Route 53.
+        *   Create a DNS record inside your domain under "hosted zones".
+        *   Create a certificate through AWS Certificate Manager to support that naming (["thebestCV.com"]).
+          
+6. (Future work) - Security.
+    *   (CloudFront). Applying features through AWS Web Application Firewall [https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html]
+    *   AWS Shield: managed DDoS protection service. It has two offerings: Standard and Advanced. [https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html]
+    *   Enabling CloudWatch logs for each service. []
  
+
 
 ## References 
 * [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
