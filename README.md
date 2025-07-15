@@ -10,5 +10,5 @@ The projects are categorized into three levels:
 * Project 1: MyCV
   
   - **Description**: this project involves creating and setting up a bucket of static content and upload our personal CV.
-  - **Services used**: S3, CloudFront (optional)
+  - **Services used**: S3, CloudFront (opt.), CloudWatch (opt).
   - **Link**: https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/MyCV.md
