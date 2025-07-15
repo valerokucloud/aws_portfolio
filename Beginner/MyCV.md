@@ -55,4 +55,4 @@
 
 ## Future work Architecture:
 
-![principal_arch](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/principal_arch.png)
+![Final_arch](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/Final_arch.png)
