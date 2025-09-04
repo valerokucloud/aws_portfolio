@@ -51,9 +51,9 @@
 
 ## Principal Architecture:
 
-![principal_arch](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/principal_arch.png)
+https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/1.%20MyCV/principal_arch.png
 
 
 ## Future work Architecture:
 
-![Final_arch](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/Final_arch.png)
+https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/1.%20MyCV/Final_arch.png
