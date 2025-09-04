@@ -28,7 +28,7 @@
         *   Test the distribution by adding '/index.html' to the end of the URL.
 
 
-3. (Optional) - Monitoring the website through CloudWatch:
+3. (Optional) - Monitoring the website through CloudWatch alarms in CloudFront:
     *   Select "Per Distribution Metrics".
         *   In this case the relevants are: BytesDownloaded, Requests, 5xxErrorRate and 4xxErrorRate.
                             
