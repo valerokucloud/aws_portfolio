@@ -29,5 +29,5 @@
 
 ## Output:
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/edit/main/Beginner/alarms.png)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/edit/main/Beginner/alarms.PNG)
 
