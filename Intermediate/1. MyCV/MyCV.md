@@ -35,7 +35,7 @@
 
 4. (Optional) - Implementing custom DNS with Route 53. It would be easier for you and others to remember if your URL was something like "thebestCV.com".
     *   Register a new domain using Route 53.
-        *   Create a DNS record inside your domain under "hosted zones".
+        *   Create DNS records inside your domain under "hosted zones". One for the alias (thebestCV.com) and another for www (www.thebestCV.com).
         *   Create a certificate through AWS Certificate Manager to support that naming (["thebestCV.com"]).
           
 6. (Optional) - Security.
