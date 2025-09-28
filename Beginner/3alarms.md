@@ -21,10 +21,6 @@
         *   Link it to an SNS topic and provide an email address.
     *   Set the alarm name.
     *   Confirm the SNS topic subscription (only if it has been specifically created for that purpose).
-          
-6. (Optional) - Security.
-    *   (CloudFront). Applying features through AWS Web Application Firewall: https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html
-    *   AWS Shield: managed DDoS protection service.It has two offerings: Standard and Advanced. https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html 
 
 
 ## References 
