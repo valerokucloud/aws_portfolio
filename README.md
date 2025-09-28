@@ -11,7 +11,7 @@ The projects are categorized into three levels:
   
   - **Description**: this project involves creating and setting up a list of billing alarms for estimating charges
   - **Services used**: CloudWatch
-  - **Link**: 
+  - **Link**: https://github.com/valerokucloud/aws_portfolio/tree/main/Beginner/1.%20Create%203%20alarms
 
 
 
