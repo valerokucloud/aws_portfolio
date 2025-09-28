@@ -12,31 +12,15 @@
 ### Steps: 
 
 
-1. Create an S3 bucket
-    * Enable static website hosting
-    * Create read access policy
-    * Put the three files: index.html, index.css and avatar.png.
+1. Set your Region to US East (N.Virginia). Billing metric data is stored in this Region and represents worldwide charges.
 
 
-2. Using CloudFront to distribute the content.
-    *   Create a CloudFront distribution:
-        *   Set the Origin domain to the bucket we have created before + change the access from Public to Origin Access.
-        *   Create a new OAC with the default settings.
-        *   Don't enable Web Application Firewall (WAF) options.
-        *   Update the Bucket policy to allow CloudFront service to access the resources inside the bucket.
-        *   Save changes and wait until the CloudFront status is set to enabled.
-        *   Test the distribution by adding '/index.html' to the end of the URL.
-
-
-3. (Optional) - Monitoring the website through CloudWatch alarms in CloudFront:
-    *   Select "Per Distribution Metrics".
-        *   In this case the relevants are: BytesDownloaded, Requests, 5xxErrorRate and 4xxErrorRate.
-                            
-
-4. (Optional) - Implementing custom DNS with Route 53. It would be easier for you and others to remember if your URL was something like "thebestCV.com".
-    *   Register a new domain using Route 53.
-        *   Create a DNS record inside your domain under "hosted zones".
-        *   Create a certificate through AWS Certificate Manager to support that naming (["thebestCV.com"]).
+2. In the navigation panel, choose "Billing" and create the alarm.
+    *   You can adapt your alarm to the threshold type, currency type, EstimatedCharges, and the type of evaluation that may occur before “declaring” it.
+    *   Configure actions: what type of trigger is needed, linking it to an SNS topic or linking it to others (Lambda Action, Auto Scaling action, Systems Manager action...).
+        *   Link it to an SNS topic and provide an email address.
+    *   Set the alarm name.
+    *   Confirm the SNS topic subscription (only if it has been specifically created for that purpose).
           
 6. (Optional) - Security.
     *   (CloudFront). Applying features through AWS Web Application Firewall: https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html
@@ -44,18 +28,10 @@
 
 
 ## References 
-* [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
-* [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
-* [Configuring Amazon Route 53 as your DNS service](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-configuring.html)
-* [Using AWS WAF with Amazon CloudFront](https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html)
-* [AWS Shield mitigation logic for CloudFront and Route 53](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-event-mitigation-logic-continuous-inspection.html)
+* [Create a billing alarm to monitor your estimated AWS charges](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
  
 
-## Principal Architecture:
+## Output:
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/principal_arch.png)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/edit/main/Beginner/alarms.png)
 
-
-## Future work Architecture:
-
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/Final_arch.png)
