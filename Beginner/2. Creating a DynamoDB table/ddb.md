@@ -118,10 +118,12 @@ With only a partition key (called a simple primary key), you can only store one 
 | **Structure**     | Single attribute                                  | Optional second attribute                                    |
 
 
+
 ### What is a DynamoDB Stream?
 A DynamoDB Stream is a feature in Amazon DynamoDB that lets you capture and react to real-time changes in your table’s data.
 Think of it as a change log for your table.
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streamsmain.html
+
 
 ### What are Global Tables?
 Global Tables provide a fully replicated, multi-region solution for DynamoDB tables. This allows for automatic data replication across multiple AWS Regions, providing high availability and low-latency access to data from any location.
@@ -134,6 +136,7 @@ DynamoDB offers on-demand backups and point-in-time recovery (PITR) backups to h
 With on-demand backups, you can create a snapshot backup of your table that DynamoDB stores and manages. You're charged based on the size and duration of your backups. Using on-demand backup, you can restore your entire DynamoDB table to the exact state it was in when the backup was created.
 
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html 
+
 
 ### Can DynamoDB be performant at-scale?
 https://aws.amazon.com/es/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/ 
