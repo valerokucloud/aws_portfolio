@@ -87,12 +87,9 @@ https://aws.amazon.com/es/blogs/database/choosing-the-right-dynamodb-partition-k
 
 ### Which three data types does the Primary Key support?
 In Amazon DDB, the Primary Key attributes (Partition Key and optional Sort Key) can only be of three scalar data types:
-1. String
-  * UTF-8 encoded text, up to 2048 bytes for a partition key and 1024 bytes for a sort key.
-2. Number
-  * Can be integer, float, or any numeric type (stored as variable length, up to 38 digits of precision).
-3. Binary
-  * Arbitrary binary data, such as encoded images or compressed files (up to the same size limits as above).
+1. String: UTF-8 encoded text, up to 2048 bytes for a partition key and 1024 bytes for a sort key.
+2. Number: can be integer, float, or any numeric type (stored as variable length, up to 38 digits of precision).
+3. Binary: arbitrary binary data, such as encoded images or compressed files (up to the same size limits as above).
 
 
 ### What is the difference between a Primary (Hash) Key and a Secondary (Sort) Key?
@@ -121,30 +118,27 @@ With only a partition key (called a simple primary key), you can only store one 
 | **Structure**     | Single attribute                                  | Optional second attribute                                    |
 
 
-
-
-
-
-
-
 ### What is a DynamoDB Stream?
-A DynamoDB Stream captures a time-ordered sequence of changes made to items in a table. You can use streams to track insert, update, and delete operations and trigger AWS Lambda functions or other integrations based on those changes.
+A DynamoDB Stream is a feature in Amazon DynamoDB that lets you capture and react to real-time changes in your table’s data.
+Think of it as a change log for your table.
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streamsmain.html
 
 ### What are Global Tables?
 Global Tables provide a fully replicated, multi-region solution for DynamoDB tables. This allows for automatic data replication across multiple AWS Regions, providing high availability and low-latency access to data from any location.
+https://aws.amazon.com/es/dynamodb/global-tables/
+
 
 ### How do backups work in DynamoDB?
-DynamoDB supports on-demand backups and continuous backups (using Point-in-Time Recovery). On-demand backups are user-initiated and allow you to create full backups of tables at any point. Point-in-Time Recovery enables you to restore your table to any second in time from the past 35 days.
+DynamoDB offers on-demand backups and point-in-time recovery (PITR) backups to help protect your DynamoDB data from disaster events and offers data archiving for long-term retention. You can back up tables from a few megabytes to hundreds of terabytes of data, with no impact on performance and availability to your production applications. All backups are automatically encrypted, cataloged, and easily discoverable.
+
+With on-demand backups, you can create a snapshot backup of your table that DynamoDB stores and manages. You're charged based on the size and duration of your backups. Using on-demand backup, you can restore your entire DynamoDB table to the exact state it was in when the backup was created.
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html 
 
 ### Can DynamoDB be performant at-scale?
+https://aws.amazon.com/es/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/ 
 
-
-
-
-## References 
-* [Create a billing alarm to monitor your estimated AWS charges](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
- 
 
 ## Output:
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/1.%20Create%203%20alarms/alarms.PNG)
+
