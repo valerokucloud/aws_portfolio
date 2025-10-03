@@ -67,12 +67,68 @@ https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.htm
 Amazon DynamoDB supports encryption to protect your data at rest and in transit.
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-protection.html
 
-
 ### Which key type is required for creating a table?
 When you create a DynamoDB table, you must define a primary key — this is required because DynamoDB uses it to uniquely identify and partition items.
 There are two types of primary keys you can choose:
  1. Partition Key (Simple Primary Key)
  2. Partition Key + Sort Key (Composite Primary Key)
+https://aws.amazon.com/es/blogs/database/choosing-the-right-dynamodb-partition-key/ 
+
+
+### Which three data types does the Primary Key support?
+In Amazon DDB, the Primary Key attributes (Partition Key and optional Sort Key) can only be of three scalar data types:
+1. String
+  * UTF-8 encoded text, up to 2048 bytes for a partition key and 1024 bytes for a sort key.
+2. Number
+  * Can be integer, float, or any numeric type (stored as variable length, up to 38 digits of precision).
+3. Binary
+  * Arbitrary binary data, such as encoded images or compressed files (up to the same size limits as above).
+
+
+### What is the difference between a Primary (Hash) Key and a Secondary (Sort) Key?
+Primary Key (Hash Key): the primary key is what uniquely identifies each item in a table. It can be defined in two ways:
+ * Also called the partition key.
+ * A single attribute that DynamoDB uses to determine the partition (physical storage location) of an item.
+ * Every item in the table must have a unique partition key value.
+ * Example:
+  If UserID is the partition key, then each user must have a unique UserID.
+With only a partition key (called a simple primary key), you can only store one item per partition key value.
+ 
+ 
+ Secondary Key (Sort Key):
+ * Also called the range key.
+ * When combined with the partition key, it forms a composite primary key.
+ * Multiple items can share the same partition key but must have a unique sort key within that partition.
+ * The sort key allows items with the same partition key to be sorted and queried efficiently.
+ * Example:
+  If your table’s primary key is (UserID, OrderDate), multiple orders can belong to the same UserID, and you can query them by date range.
+
+| Feature           | Primary (Hash) Key (Partition Key)                | Secondary (Sort) Key (Range Key)                             |
+| ----------------- | ------------------------------------------------- | ------------------------------------------------------------ |
+| **Purpose**       | Decides the partition (physical location of data) | Provides uniqueness within partition and ordering            |
+| **Uniqueness**    | Must be unique if used alone                      | Must be unique **per partition key**                         |
+| **Query support** | Look up items directly by key                     | Enables range queries, sorting, filtering within a partition |
+| **Structure**     | Single attribute                                  | Optional second attribute                                    |
+
+
+
+
+
+
+
+
+### What is a DynamoDB Stream?
+A DynamoDB Stream captures a time-ordered sequence of changes made to items in a table. You can use streams to track insert, update, and delete operations and trigger AWS Lambda functions or other integrations based on those changes.
+
+### What are Global Tables?
+Global Tables provide a fully replicated, multi-region solution for DynamoDB tables. This allows for automatic data replication across multiple AWS Regions, providing high availability and low-latency access to data from any location.
+
+### How do backups work in DynamoDB?
+DynamoDB supports on-demand backups and continuous backups (using Point-in-Time Recovery). On-demand backups are user-initiated and allow you to create full backups of tables at any point. Point-in-Time Recovery enables you to restore your table to any second in time from the past 35 days.
+
+### Can DynamoDB be performant at-scale?
+
+
 
 
 ## References 
