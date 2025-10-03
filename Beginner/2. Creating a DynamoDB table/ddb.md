@@ -50,16 +50,16 @@ The maximum item size in DDB is 400 KB. That includes:
 
 1. Write Capacity Units (WCU):
  *  1 WCU = One write per second for an item up to 1 KB in size.
- * If the item is larger than 1 KB, multiple WCUs are consumed.
-  * Example: Writing a 2.5 KB item = 3 WCUs.
+   * If the item is larger than 1 KB, multiple WCUs are consumed.
+    * Example: Writing a 2.5 KB item = 3 WCUs.
     
 2. Read Capacity Units (RCU):
 Reads depend on whether they’re eventually consistent or strongly consistent:
  * 1 RCU =
-  * One strongly consistent read per second for an item up to 4 KB, OR
-  * Two eventually consistent reads per second for an item up to 4 KB.
-  * If the item is larger than 4 KB, more RCUs are consumed.
-  * Example: Reading a 10 KB item strongly consistent = 3 RCUs.
+   * One strongly consistent read per second for an item up to 4 KB, OR
+   * Two eventually consistent reads per second for an item up to 4 KB.
+   * If the item is larger than 4 KB, more RCUs are consumed.
+   * Example: Reading a 10 KB item strongly consistent = 3 RCUs.
 
 
 
