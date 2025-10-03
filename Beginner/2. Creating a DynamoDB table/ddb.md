@@ -20,10 +20,12 @@
 ### What is an "item" in DynamoDB?
 An item in DynamoDB (DDB from now on) is a single record in a table, which is composed of attribtutes. Each item is uniquely identified by a primary key and can hold different types of data within its attributes.
 
+
 ### What data types can you store in a DDB table?
   * Scalar types: String, Number, Binary, Boolean and Null.
   * Set types: String Set, Number Set and Binary Set.
   * Document types: List and Map.  
+
 
 ### What is the maximum size of an item in DDB?
 The maximum item size in DDB is 400 KB. That includes:
@@ -32,6 +34,7 @@ The maximum item size in DDB is 400 KB. That includes:
  * The length of binary data.
  * Any overhead for attribute names and types.
 
+
 ### Capacity modes availables for DDB:
 1. Provisioned Capacity Mode:
  * You specify the number of read capacity units (RCUs) and write capacity units (WCUs) required.
@@ -39,17 +42,20 @@ The maximum item size in DDB is 400 KB. That includes:
  * You can also enable Auto Scaling, which automatically adjusts capacity based on utilization.
  * Cost-effective if your workload is stable and you can estimate traffic.
 
+
 2. On-demand Capacity Mode:
  * You don’t need to specify RCUs or WCUs.
  * DynamoDB automatically scales up and down to handle requests.
  * You pay per request (read/write request units).
  * Best for unpredictable or spiky workloads, or if you want to start without capacity planning.
 
+
 ### What are Write Capacity and Read Capacity Units (WCU/RCU)?
 1. Write Capacity Units (WCU):
  *  1 WCU = One write per second for an item up to 1 KB in size.
     * If the item is larger than 1 KB, multiple WCUs are consumed.
      * Example: Writing a 2.5 KB item = 3 WCUs.
+
     
 2. Read Capacity Units (RCU):
 Reads depend on whether they’re eventually consistent or strongly consistent:
@@ -59,19 +65,23 @@ Reads depend on whether they’re eventually consistent or strongly consistent:
    * If the item is larger than 4 KB, more RCUs are consumed.
    * Example: Reading a 10 KB item strongly consistent = 3 RCUs.
 
+
 ### Does DDB support autoscaling?
 DynamoDB supports auto scaling by automatically adjusting the provisioned read and write capacity units (RCUs/WCUs) of a table or a global secondary index so that your application gets enough throughput without you constantly tweaking settings.
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html 
 
+
 ### Does DynamoDB support encryption?
 Amazon DynamoDB supports encryption to protect your data at rest and in transit.
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-protection.html
+
 
 ### Which key type is required for creating a table?
 When you create a DynamoDB table, you must define a primary key — this is required because DynamoDB uses it to uniquely identify and partition items.
 There are two types of primary keys you can choose:
  1. Partition Key (Simple Primary Key)
  2. Partition Key + Sort Key (Composite Primary Key)
+
 https://aws.amazon.com/es/blogs/database/choosing-the-right-dynamodb-partition-key/ 
 
 
