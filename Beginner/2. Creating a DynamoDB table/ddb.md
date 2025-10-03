@@ -33,7 +33,6 @@ The maximum item size in DDB is 400 KB. That includes:
  * Any overhead for attribute names and types.
 
 ### Capacity modes availables for DDB:
-
 1. Provisioned Capacity Mode:
  * You specify the number of read capacity units (RCUs) and write capacity units (WCUs) required.
  * Best suited for predictable, steady workloads.
@@ -47,7 +46,6 @@ The maximum item size in DDB is 400 KB. That includes:
  * Best for unpredictable or spiky workloads, or if you want to start without capacity planning.
 
 ### What are Write Capacity and Read Capacity Units (WCU/RCU)?
-
 1. Write Capacity Units (WCU):
  *  1 WCU = One write per second for an item up to 1 KB in size.
     * If the item is larger than 1 KB, multiple WCUs are consumed.
@@ -61,8 +59,20 @@ Reads depend on whether they’re eventually consistent or strongly consistent:
    * If the item is larger than 4 KB, more RCUs are consumed.
    * Example: Reading a 10 KB item strongly consistent = 3 RCUs.
 
+### Does DDB support autoscaling?
+DynamoDB supports auto scaling by automatically adjusting the provisioned read and write capacity units (RCUs/WCUs) of a table or a global secondary index so that your application gets enough throughput without you constantly tweaking settings.
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html 
+
+### Does DynamoDB support encryption?
+Amazon DynamoDB supports encryption to protect your data at rest and in transit.
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-protection.html
 
 
+### Which key type is required for creating a table?
+When you create a DynamoDB table, you must define a primary key — this is required because DynamoDB uses it to uniquely identify and partition items.
+There are two types of primary keys you can choose:
+ 1. Partition Key (Simple Primary Key)
+ 2. Partition Key + Sort Key (Composite Primary Key)
 
 
 ## References 
