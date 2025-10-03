@@ -37,17 +37,17 @@ The maximum item size in DDB is 400 KB. That includes:
 
 ### Capacity modes availables for DDB:
 1. Provisioned Capacity Mode:
- * You specify the number of read capacity units (RCUs) and write capacity units (WCUs) required.
- * Best suited for predictable, steady workloads.
- * You can also enable Auto Scaling, which automatically adjusts capacity based on utilization.
- * Cost-effective if your workload is stable and you can estimate traffic.
+  * You specify the number of read capacity units (RCUs) and write capacity units (WCUs) required.
+  * Best suited for predictable, steady workloads.
+  * You can also enable Auto Scaling, which automatically adjusts capacity based on utilization.
+  * Cost-effective if your workload is stable and you can estimate traffic.
 
 
 2. On-demand Capacity Mode:
- * You don’t need to specify RCUs or WCUs.
- * DynamoDB automatically scales up and down to handle requests.
- * You pay per request (read/write request units).
- * Best for unpredictable or spiky workloads, or if you want to start without capacity planning.
+  * You don’t need to specify RCUs or WCUs.
+  * DynamoDB automatically scales up and down to handle requests.
+  * You pay per request (read/write request units).
+  * Best for unpredictable or spiky workloads, or if you want to start without capacity planning.
 
 
 ### What are Write Capacity and Read Capacity Units (WCU/RCU)?
