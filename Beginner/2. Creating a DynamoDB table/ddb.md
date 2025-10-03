@@ -1,4 +1,4 @@
-# 2. Create a DynamoDB table
+# 2. Creating a DynamoDB table
  
 ## Difficulty: Beginner
 
