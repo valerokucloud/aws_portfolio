@@ -21,9 +21,9 @@
 An item in DynamoDB (DDB from now on) is a single record in a table, which is composed of attribtutes. Each item is uniquely identified by a primary key and can hold different types of data within its attributes.
 
 ### What data types can you store in a DDB table?
-  * Scalar types: String, Number, Binary, Boolean and Null.
-  * Set types: String Set, Number Set and Binary Set.
-  * Document types: List and Map.  
+  ** Scalar types: String, Number, Binary, Boolean and Null.
+  ** Set types: String Set, Number Set and Binary Set.
+  ** Document types: List and Map.  
 
 
 3. In the navigation panel, choose "Billing" and create the alarm.
