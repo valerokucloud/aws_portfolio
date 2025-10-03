@@ -1,4 +1,4 @@
-# 2. Creating three billing alarms through CloudWatch
+# 2. Create a DynamoDB table
  
 ## Difficulty: Beginner
 
