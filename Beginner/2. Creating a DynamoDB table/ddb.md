@@ -68,12 +68,12 @@ Reads depend on whether they’re eventually consistent or strongly consistent:
 
 ### Does DDB support autoscaling?
 DynamoDB supports auto scaling by automatically adjusting the provisioned read and write capacity units (RCUs/WCUs) of a table or a global secondary index so that your application gets enough throughput without you constantly tweaking settings.
-https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html 
+More info: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html 
 
 
 ### Does DynamoDB support encryption?
 Amazon DynamoDB supports encryption to protect your data at rest and in transit.
-https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-protection.html
+More info: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-protection.html
 
 
 ### Which key type is required for creating a table?
@@ -82,7 +82,7 @@ There are two types of primary keys you can choose:
  1. Partition Key (Simple Primary Key)
  2. Partition Key + Sort Key (Composite Primary Key)
 
-https://aws.amazon.com/es/blogs/database/choosing-the-right-dynamodb-partition-key/ 
+More info: https://aws.amazon.com/es/blogs/database/choosing-the-right-dynamodb-partition-key/ 
 
 
 ### Which three data types does the Primary Key support?
@@ -122,12 +122,12 @@ With only a partition key (called a simple primary key), you can only store one 
 ### What is a DynamoDB Stream?
 A DynamoDB Stream is a feature in Amazon DynamoDB that lets you capture and react to real-time changes in your table’s data.
 Think of it as a change log for your table.
-https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streamsmain.html
+More info: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streamsmain.html
 
 
 ### What are Global Tables?
 Global Tables provide a fully replicated, multi-region solution for DynamoDB tables. This allows for automatic data replication across multiple AWS Regions, providing high availability and low-latency access to data from any location.
-https://aws.amazon.com/es/dynamodb/global-tables/
+More info: https://aws.amazon.com/es/dynamodb/global-tables/
 
 
 ### How do backups work in DynamoDB?
@@ -135,11 +135,26 @@ DynamoDB offers on-demand backups and point-in-time recovery (PITR) backups to h
 
 With on-demand backups, you can create a snapshot backup of your table that DynamoDB stores and manages. You're charged based on the size and duration of your backups. Using on-demand backup, you can restore your entire DynamoDB table to the exact state it was in when the backup was created.
 
-https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html 
+More info: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html 
 
 
 ### Can DynamoDB be performant at-scale?
-https://aws.amazon.com/es/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/ 
+
+ * Low Latency: Single-digit millisecond reads/writes, predictable at any size.
+ * Scalability:
+ * Partitioning: Data auto-distributed across partitions.
+ * Auto Scaling & Adaptive Capacity: Adjusts throughput and handles hot partitions.
+ * Global Tables: Multi-Region replication for global users.
+ * Optimizations:
+ * DAX (in-memory caching) for microsecond reads.
+ * Streams + Lambda for event-driven architectures.
+ * S3 Export for analytics.
+ * Best Practices:
+ * Design partition keys carefully (avoid hot keys).
+ * Store large objects in S3.
+ * Use GSIs for flexible queries.
+
+More info: https://aws.amazon.com/es/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/ 
 
 
 ## Output:
