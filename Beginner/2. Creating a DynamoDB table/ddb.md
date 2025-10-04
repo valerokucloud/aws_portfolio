@@ -146,17 +146,17 @@ More info: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Back
 
  * Low Latency: Single-digit millisecond reads/writes, predictable at any size.
  * Scalability:
- * Partitioning: Data auto-distributed across partitions.
- * Auto Scaling & Adaptive Capacity: Adjusts throughput and handles hot partitions.
- * Global Tables: Multi-Region replication for global users.
+   * Partitioning: Data auto-distributed across partitions.
+   * Auto Scaling & Adaptive Capacity: Adjusts throughput and handles hot partitions.
+   * Global Tables: Multi-Region replication for global users.
  * Optimizations:
- * DAX (in-memory caching) for microsecond reads.
- * Streams + Lambda for event-driven architectures.
- * S3 Export for analytics.
+   * DAX (in-memory caching) for microsecond reads.
+   * Streams + Lambda for event-driven architectures.
+   * S3 Export for analytics.
  * Best Practices:
- * Design partition keys carefully (avoid hot keys).
- * Store large objects in S3.
- * Use GSIs for flexible queries.
+   * Design partition keys carefully (avoid hot keys).
+   * Store large objects in S3.
+   * Use GSIs for flexible queries.
 
 More info: https://aws.amazon.com/es/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/ 
 
