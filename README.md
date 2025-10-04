@@ -13,6 +13,7 @@ The projects are categorized into three levels:
   - **Services used**: CloudWatch
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/1.%20Create%203%20alarms/3alarms.md)
 
+
 2. Create a DynamoDB table
   
   - **Description**: this project involves creating a DynamoDB table
