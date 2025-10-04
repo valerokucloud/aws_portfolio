@@ -18,7 +18,7 @@ The projects are categorized into three levels:
   
   - **Description**: this project involves creating a DynamoDB table
   - **Services used**: DynamoDB
-  - **Link**: [Project directory] (https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/2.%20Creating%20a%20DynamoDB%20table/ddb.md)
+  - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/2.%20Creating%20a%20DynamoDB%20table/ddb.md)
 
 
 ## Intermediate projects:
