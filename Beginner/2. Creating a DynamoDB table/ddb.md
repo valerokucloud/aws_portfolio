@@ -68,11 +68,13 @@ Reads depend on whether they’re eventually consistent or strongly consistent:
 
 ### Does DDB support autoscaling?
 DynamoDB supports auto scaling by automatically adjusting the provisioned read and write capacity units (RCUs/WCUs) of a table or a global secondary index so that your application gets enough throughput without you constantly tweaking settings.
+
 More info: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html 
 
 
 ### Does DynamoDB support encryption?
 Amazon DynamoDB supports encryption to protect your data at rest and in transit.
+
 More info: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-protection.html
 
 
