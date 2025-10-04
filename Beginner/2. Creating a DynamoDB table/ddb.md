@@ -163,4 +163,5 @@ More info: https://aws.amazon.com/es/blogs/database/amazon-dynamodb-auto-scaling
 
 ## Output:
 
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/2.%20Creating%20a%20DynamoDB%20table/DDB_table.PNG)
 
