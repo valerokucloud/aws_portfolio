@@ -25,7 +25,7 @@ The projects are categorized into three levels:
   
   - **Description**: this project involves creating a VPC + routing + EC2 instances in public and private subnets
   - **Services used**: VPC, EC2, Internet GW, NAT GW
-  - **Link**: [Project directory]
+  - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/3.%20Creating%20a%20VPC%20%2B%20EC2%20instances/vpc%2Bec2.md)
 
 
 ## Intermediate projects:
