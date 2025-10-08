@@ -20,5 +20,6 @@
 
 ## Output:
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/3.%20Creating%20a%20VPC%20%2B%20EC2%20instances/VPC.png)<br>
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/3.%20Creating%20a%20VPC%20%2B%20EC2%20instances/VPC.png)
+<br>
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/3.%20Creating%20a%20VPC%20%2B%20EC2%20instances/graph.png)
