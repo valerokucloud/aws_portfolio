@@ -18,8 +18,8 @@
   *   Create route association with both subnets to enable certain communication between both EC2 instances and the outside world.
 
 
-## Output:
+## Output
 
-<br><br>![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/3.%20Creating%20a%20VPC%20%2B%20EC2%20instances/VPC.png)  
+<br>![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/3.%20Creating%20a%20VPC%20%2B%20EC2%20instances/VPC.png)  
 <br><br>
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/3.%20Creating%20a%20VPC%20%2B%20EC2%20instances/graph.png)
