@@ -16,7 +16,7 @@ The projects are categorized into three levels:
 
 2. Creating a DynamoDB table
   
-  - **Description**: this project involves creating a DynamoDB table
+  - **Description**: this project involves creating a DynamoDB table.
   - **Services used**: DynamoDB
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/2.%20Creating%20a%20DynamoDB%20table/ddb.md)
 
@@ -27,11 +27,20 @@ The projects are categorized into three levels:
   - **Services used**: VPC, EC2, Internet GW, NAT GW
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/3.%20Creating%20a%20VPC%20%2B%20EC2%20instances/vpc%2Bec2.md)
 
+
 4. Creating an IAM user + security policies
   
   - **Description**: this project involves creating a new user in IAM with console access, adding to the Admin group + Admin. managed policy, enabling MFA for the root user and applying an IAM password policy that follows security best practices
   - **Services used**: IAM Access Management
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/4.%20Creating%20an%20IAM%20user%20%2B%20security%20policies/4.%20IAM%20user.md)
+
+
+5. Creating an RDS DB instance
+  
+  - **Description**: this project involves creating an RDS DB instance (MySQL Engine).
+  - **Services used**: RDS
+  - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/tree/main/Beginner/5.%20Creating%20an%20RDS%20DB%20instance)
+
 
 ## Intermediate projects:
 
