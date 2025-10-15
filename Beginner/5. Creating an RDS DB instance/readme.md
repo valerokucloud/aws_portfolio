@@ -12,7 +12,5 @@
 ### You need to complete the following:
 
   *   Create an RDS DB instance
-  *   Specify the storage
-  *   Test it by inserting random data.
-  *   Run a scan on the table that returns all three items.
-  *   Run a query on the table that returns a single item.
+  *   Specify the storage and advanced settings
+
