@@ -14,3 +14,8 @@
   *   Create an RDS DB instance
   *   Specify the storage and advanced settings
 
+
+## References 
+* [What is RDS?](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+* [Setting up your RDS environment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SettingUp.html)
+* [Create an RDS Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html)
