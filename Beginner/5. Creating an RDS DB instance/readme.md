@@ -19,3 +19,4 @@
 * [What is RDS?](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 * [Setting up your RDS environment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SettingUp.html)
 * [Create an RDS Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html)
+* [RDS Free tier info](https://aws.amazon.com/rds/free/)
