@@ -19,7 +19,7 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 1. **Data Source**: begin by obtaining your dataset. For example, you can use Spotify data on artists and listeners, which is available on platforms like Kaggle.(https://www.kaggle.com/datasets)
 2. **Creating an S3 bucket and uploading data:** set up an S3 bucket, upload dataset files (listeners.csv and listeners.json) and configure the manifest file.
      * Terraform can't modify a physical JSON file directly, but it can generate one dynamically before uploading it, using jsonencode() or templatefile(). In our case we used templatefile().
-       * Therefore, the manifest file "listeners.json" will be renamed "listeners.json.tpl" (temporary file) so that it can be uploaded to the s3 bucket with this name. 
+       * Therefore, the manifest file "listeners.json" will be renamed "listeners.json.tpl" (temporary file) so that it can be uploaded to the s3 bucket with the bucket's name changed. 
 4. Setting up AWS QuickSight
 5. Visualize your data on AWS QuickSight
 6. Deeping dive into Quicksight (additional)
