@@ -3,7 +3,7 @@
 ## Difficulty: Intermediate
 
 ## Project’s Author 
-* [Kevin-byt](https://github.com/Kevin-byt))
+* [Kevin-byt](https://github.com/Kevin-byt)
 * [Kevin's LinkedIn](https://www.linkedin.com/in/kevin-kiruri/)
 
  
