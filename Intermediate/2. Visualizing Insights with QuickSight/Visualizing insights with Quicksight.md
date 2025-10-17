@@ -3,14 +3,15 @@
 ## Difficulty: Intermediate
 
 ## Project’s Author 
-* [Kevin-byt](https://github.com/Kevin-byt)), (https://www.linkedin.com/in/kevin-kiruri/)
+* [Kevin-byt](https://github.com/Kevin-byt))
+* [Kevin's LinkedIn](https://www.linkedin.com/in/kevin-kiruri/)
 
  
 ## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
  
-n today's data-driven landscape, transforming raw data into meaningful insights is crucial. AWS QuickSight and Amazon S3 provide a powerful combination for building scalable, interactive data visualizations directly from your cloud-stored data.
+In today's data-driven landscape, transforming raw data into meaningful insights is crucial. ** AWS QuickSight ** and ** Amazon S3 ** provide a powerful combination for building scalable, interactive data visualizations directly from your cloud-stored data.
 
-This guide explores how to connect, prepare, and visualize your datasets using these AWS services. Whether you're a data analyst, developer, or business leader, you'll learn how to leverage QuickSight to create compelling dashboards and make data-driven decisions with ease.
+This guide explores how to connect, prepare, and visualize your datasets using these AWS services. Whether you're a ** data analyst **, ** developer ** , or ** business leader ** , you'll learn how to leverage QuickSight to create compelling dashboards and make data-driven decisions with ease.
 
 ### Steps: 
 
