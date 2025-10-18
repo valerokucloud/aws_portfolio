@@ -16,11 +16,13 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 
 ### Steps: 
 
-1. **Data Source**: begin by obtaining your dataset. For example, you can use Spotify data on artists and listeners, which is available on platforms like Kaggle.(https://www.kaggle.com/datasets) 
-2. **Creating an S3 bucket and uploading data**: set up an S3 bucket, upload dataset files (listeners.csv and listeners.json) and configure the manifest file.
+1. **Data Source**: begin by obtaining your dataset. For example, you can use Spotify data on artists and listeners, which is available on platforms like Kaggle.(https://www.kaggle.com/datasets)
+<br>
+3. **Creating an S3 bucket and uploading data**: set up an S3 bucket, upload dataset files (listeners.csv and listeners.json) and configure the manifest file.
      * Terraform can't modify a physical JSON file directly, but it can generate one dynamically before uploading it, using jsonencode() or templatefile(). In our case we used templatefile().
         * Therefore, the manifest file "listeners.json" will be renamed "listeners.json.tpl" (temporary file) so that it can be uploaded to the s3 bucket with the bucket's name changed.
-3. **Setting up AWS QuickSight**:
+<br>
+4. **Setting up AWS QuickSight**:
  * Creating a new user (in our case we used the free one month version).
   * Check bucket permissions using the options at the top right and selecting "Permissions" + S3 + selecting the bucket:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/Permissions.PNG)
@@ -49,6 +51,14 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 
 
 5. **Deeping dive into Quicksight (additional)**
+
+AWS QuickSight offers a wide range of features for data visualization and analysis. Here are some key features that you can practice and explore:
+
+1. **Data source connectivity**: Amazon QuickSight provides robust capabilities for connecting to a wide range of data sources, both on-premises and cloud-based. Supported sources include Amazon S3, Amazon RDS, Amazon Redshift, Microsoft SQL Server, among others. It is essential to practice configuring connections to various data sources in order to efficiently import datasets into the QuickSight analytics environment.
+2. **Data preparation**: QuickSight includes built-in functionalities for data cleansing, transformation, and modeling. These capabilities support operations such as filtering, pivoting, and data aggregation. Proper data preparation is critical to ensure data quality and relevance for subsequent visualization and analytical tasks.
+3. **Interactive dashboards**: the platform enables the creation of interactive dashboards by combining multiple visualizations into a single visual interface. Dashboard design should focus on clearly communicating key insights while enabling end-users to dynamically explore the data to support informed decision-making.
+4. **Custom calculations**: QuickSight features a formula editor that allows users to create custom calculated fields. These calculations can be used to derive additional metrics, perform data segmentation, or transform variables—enabling more in-depth and business-specific analysis.
+5. **Usage and Performance Monitoring**: QuickSight provides tools for monitoring the usage and performance of deployed dashboards and analyses. Continuous monitoring helps identify bottlenecks, optimize queries, and efficiently scale the infrastructure—ensuring a smooth user experience and sustainable operation of the analytics environment.
 
 
 ## References 
