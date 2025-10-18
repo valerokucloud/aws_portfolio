@@ -51,7 +51,7 @@ The projects are categorized into three levels:
   - **Services used**: S3, CloudFront (opt.), CloudWatch (opt), Certificate Manager (opt).
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/MyCV.md)
 
-
+<br>
 2. Visualizing Insights with QuickSight
   
   - **Description**: in this project, we delve into the potent combination of AWS QuickSight and Amazon S3, showcasing their ability to turn your data into compelling visual representations.
