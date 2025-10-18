@@ -32,7 +32,7 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/2.PNG)
     
-7. Visualizing data on AWS QuickSight:
+4. **Visualizing data on AWS QuickSight**:
  * Select the data source details and click on "Visualize":
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/3.PNG)
 
@@ -47,7 +47,7 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/5.PNG)
 
 
-9. Deeping dive into Quicksight (additional)
+5. **Deeping dive into Quicksight (additional)**
 
 
 ## References 
