@@ -23,21 +23,21 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 3. **Setting up AWS QuickSight**:
  * Creating a new user (in our case we used the free one month version).
   * Check bucket permissions using the options at the top right and selecting "Permissions" + S3 + selecting the bucket:
-  ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/Permissions.PNG)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/Permissions.PNG)
 
   * Define a new datasource --> select S3 and define the S3 URI of the manifest file:
-  ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/1.PNG)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/1.PNG)
 
   * Once this is done, we will have the dataset defined and can begin with data visualization:
 
-  ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/2.PNG)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/2.PNG)
     
 7. Visualizing data on AWS QuickSight:
  * Select the data source details and click on "Visualize":
-  ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/3.PNG)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/3.PNG)
 
  * Define an interactive sheet for visualize the data:
-  ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/4.PNG)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/4.PNG)
 
  * Select the following:
    * Artist field
