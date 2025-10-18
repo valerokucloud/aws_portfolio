@@ -18,13 +18,13 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 
 1. **Data Source**: begin by obtaining your dataset. For example, you can use Spotify data on artists and listeners, which is available on platforms like Kaggle.(https://www.kaggle.com/datasets)
 <br>
-3. **Creating an S3 bucket and uploading data**: set up an S3 bucket, upload dataset files (listeners.csv and listeners.json) and configure the manifest file.
-     * Terraform can't modify a physical JSON file directly, but it can generate one dynamically before uploading it, using jsonencode() or templatefile(). In our case we used templatefile().
-        * Therefore, the manifest file "listeners.json" will be renamed "listeners.json.tpl" (temporary file) so that it can be uploaded to the s3 bucket with the bucket's name changed.
+2. **Creating an S3 bucket and uploading data**: set up an S3 bucket, upload dataset files (listeners.csv and listeners.json) and configure the manifest file.
+ * Terraform can't modify a physical JSON file directly, but it can generate one dynamically before uploading it, using jsonencode() or templatefile(). In our case we used templatefile().
+ * Therefore, the manifest file "listeners.json" will be renamed "listeners.json.tpl" (temporary file) so that it can be uploaded to the s3 bucket with the bucket's name changed.
 <br>
-4. **Setting up AWS QuickSight**:
+3. **Setting up AWS QuickSight**:
  * Creating a new user (in our case we used the free one month version).
-  * Check bucket permissions using the options at the top right and selecting "Permissions" + S3 + selecting the bucket:
+ * Check bucket permissions using the options at the top right and selecting "Permissions" + S3 + selecting the bucket:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/Permissions.PNG)
 
   * Define a new datasource --> select S3 and define the S3 URI of the manifest file:
