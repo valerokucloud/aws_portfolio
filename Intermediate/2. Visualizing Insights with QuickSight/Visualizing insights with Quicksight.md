@@ -21,6 +21,7 @@ This guide explores how to connect, prepare, and visualize your datasets using t
    * Terraform can't modify a physical JSON file directly, but it can generate one dynamically before uploading it, using jsonencode() or templatefile(). In our case we used templatefile().
      * Therefore, the manifest file "listeners.json" will be renamed "listeners.json.tpl" (temporary file) so that it can be uploaded to the s3 bucket with the bucket's name changed
        <br>
+       <br>
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/manifest_file.PNG)
        
 3. **Setting up AWS QuickSight**:
