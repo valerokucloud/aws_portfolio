@@ -20,23 +20,22 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 2. **Creating an S3 bucket and uploading data**: set up an S3 bucket, upload dataset files (listeners.csv and listeners.json) and configure the manifest file.
    * Terraform can't modify a physical JSON file directly, but it can generate one dynamically before uploading it, using jsonencode() or templatefile(). In our case we used templatefile().
      * Therefore, the manifest file "listeners.json" will be renamed "listeners.json.tpl" (temporary file) so that it can be uploaded to the s3 bucket with the bucket's name changed
-       <br>
-       <br>
+       <br><br>
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/manifest_file.PNG)
        
 3. **Setting up AWS QuickSight**:
    * Creating a new user (in our case we used the free one month version).
    * Check bucket permissions using the options at the top right and selecting "Permissions" + S3 + selecting the bucket: <br><br>
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/Permissions.PNG)
-   * Define a new datasource --> select S3 and define the S3 URI of the manifest file:<br>
+   * Define a new datasource --> select S3 and define the S3 URI of the manifest file:<br><br>
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/1.PNG)
-   * Once this is done, we will have the dataset defined and can begin with data visualization:
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/2.PNG)
+   * Once this is done, we will have the dataset defined and can begin with data visualization: <br><br>
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/2.PNG) <br><br>
 4. **Visualizing data on AWS QuickSight**:
-  * Select the data source details and click on "Visualize":
+  * Select the data source details and click on "Visualize": <br><br>
    ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/3.PNG)
 
-  * Define an interactive sheet for visualize the data:
+  * Define an interactive sheet for visualize the data: <br><br>
    ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/4.PNG)
 
   * Select the following:
