@@ -58,12 +58,13 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 </p>
 
 ## References 
+![Amazon QuickSight Overview](https://docs.aws.amazon.com/quicksight/latest/developerguide/welcome.html?)
+![Managing user access inside Amazon Quick Suite](https://docs.aws.amazon.com/quicksuite/latest/userguide/managing-users.html?)
+![Getting started with Amazon QuickSight](https://docs.aws.amazon.com/quicksuite/latest/userguide/quick-sight-getting-started.html?)
+![Preparing data in Amazon QuickSight](https://docs.aws.amazon.com/quicksuite/latest/userguide/preparing-data.html?)
  
 
-## Basic architecture:
-
-
-## Actual architecture:
+## Architecture:
 
 
 ## Output:
