@@ -45,6 +45,7 @@ This guide explores how to connect, prepare, and visualize your datasets using t
      
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/5.PNG)
 
+<p align="justify">
 5. **Deeping dive into Quicksight (additional)**
 
   AWS QuickSight offers a wide range of features for data visualization and analysis. Here are some key features that you can practice and explore:
@@ -54,7 +55,7 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 3. **Interactive dashboards**: the platform enables the creation of interactive dashboards by combining multiple visualizations into a single visual interface. Dashboard design should focus on clearly communicating key insights while enabling end-users to dynamically explore the data to support informed decision-making. <br>
 4. **Custom calculations**: QuickSight features a formula editor that allows users to create custom calculated fields. These calculations can be used to derive additional metrics, perform data segmentation, or transform variables—enabling more in-depth and business-specific analysis. <br>
 5. **Usage and Performance Monitoring**: QuickSight provides tools for monitoring the usage and performance of deployed dashboards and analyses. Continuous monitoring helps identify bottlenecks, optimize queries, and efficiently scale the infrastructure—ensuring a smooth user experience and sustainable operation of the analytics environment.
-
+</p>
 
 ## References 
  
