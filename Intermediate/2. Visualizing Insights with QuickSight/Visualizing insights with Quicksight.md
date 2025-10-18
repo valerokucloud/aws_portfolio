@@ -45,9 +45,9 @@ This guide explores how to connect, prepare, and visualize your datasets using t
      
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/5.PNG)
 
-<p align="justify">
-5. **Deeping dive into Quicksight (additional)**
 
+5. **Deeping dive into Quicksight (additional)**
+<p align="justify">
   AWS QuickSight offers a wide range of features for data visualization and analysis. Here are some key features that you can practice and explore:
 
 1. **Data source connectivity**: Amazon QuickSight provides robust capabilities for connecting to a wide range of data sources, both on-premises and cloud-based. Supported sources include Amazon S3, Amazon RDS, Amazon Redshift, Microsoft SQL Server, among others. It is essential to practice configuring connections to various data sources in order to efficiently import datasets into the QuickSight analytics environment. <br>
