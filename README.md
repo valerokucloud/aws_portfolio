@@ -41,8 +41,8 @@ The projects are categorized into three levels:
   - **Description**: this project involves creating an RDS DB instance (MySQL Engine).
   - **Services used**: RDS
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/tree/main/Beginner/5.%20Creating%20an%20RDS%20DB%20instance)
+<br><br>
 
-<br>
 ## Intermediate projects:
 
 1. MyCV
