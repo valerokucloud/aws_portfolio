@@ -45,7 +45,7 @@ The projects are categorized into three levels:
 <br>
 
 ## Intermediate projects:
-<br>
+
 1. MyCV
   
   - **Description**: this project involves creating and setting up a bucket of static content and upload our personal CV.
