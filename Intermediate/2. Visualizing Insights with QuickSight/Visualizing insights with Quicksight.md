@@ -33,16 +33,16 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/2.PNG)
     
 4. **Visualizing data on AWS QuickSight**:
- * Select the data source details and click on "Visualize":
+* Select the data source details and click on "Visualize":
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/3.PNG)
 
- * Define an interactive sheet for visualize the data:
+* Define an interactive sheet for visualize the data:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/4.PNG)
 
- * Select the following:
-   * Artist field
-   * Filter (more than 75.000.000 listeners, for example)
-   * Select a visual chart
+* Select the following:
+ * Artist field
+ * Filter (more than 75.000.000 listeners, for example)
+ * Select a visual chart
      
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/5.PNG)
 
