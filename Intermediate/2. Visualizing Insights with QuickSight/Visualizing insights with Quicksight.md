@@ -63,7 +63,7 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 * [Getting started with Amazon QuickSight](https://docs.aws.amazon.com/quicksuite/latest/userguide/quick-sight-getting-started.html?)
 * [Preparing data in Amazon QuickSight](https://docs.aws.amazon.com/quicksuite/latest/userguide/preparing-data.html?)
  
-
+<br>
 ## Architecture:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Architecture/Architecture.png)
 
