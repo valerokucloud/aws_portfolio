@@ -57,4 +57,3 @@ The projects are categorized into three levels:
   - **Services used**: S3, Quicksight (one month free tier)
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Visualizing%20insights%20with%20Quicksight.md)
 
-https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Visualizing%20insights%20with%20Quicksight.md
