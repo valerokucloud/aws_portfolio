@@ -1,7 +1,7 @@
 # 2. Visualizing Insights with QuickSight
  
 ## Difficulty: Intermediate
-****
+
 ## Project’s Author 
 * [Kevin-byt](https://github.com/Kevin-byt)
 * [Kevin's LinkedIn](https://www.linkedin.com/in/kevin-kiruri/)
@@ -45,7 +45,7 @@ This guide explores how to connect, prepare, and visualize your datasets using t
      
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Quicksight%20config/5.PNG)
 
-
+<br><br>
 5. **Deeping dive into Quicksight (additional)**
 <p align="justify">
   AWS QuickSight offers a wide range of features for data visualization and analysis. Here are some key features that you can practice and explore:
@@ -65,7 +65,5 @@ This guide explores how to connect, prepare, and visualize your datasets using t
  
 
 ## Architecture:
-
-
-## Output:
+[!Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Architecture/Architecture.png)
 
