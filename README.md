@@ -58,3 +58,11 @@ The projects are categorized into three levels:
   - **Services used**: S3, Quicksight (one month free tier)
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Visualizing%20insights%20with%20Quicksight.md)
 
+
+## Advanced projects:
+
+1. Bankerbot - Chatbot with Amazon Lex
+
+  - **Description**: This project walks through building a fully functional banking chatbot using Amazon Lex and Lambda. The bot handles greetings, balance checks, context-based follow-ups, and fund transfers using custom slots and confirmation prompts.
+  - **Services used**: Lambda, Amazon Lex
+  - **Link**: [Project directory]
