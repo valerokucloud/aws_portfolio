@@ -34,6 +34,7 @@ The projects are categorized into three levels:
   - **Description**: this project involves creating a new user in IAM with console access, adding to the Admin group + Admin. managed policy, enabling MFA for the root user and applying an IAM password policy that follows security best practices
   - **Services used**: IAM Access Management
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Beginner/4.%20Creating%20an%20IAM%20user%20%2B%20security%20policies/4.%20IAM%20user.md)
+
 <br>
 
 5. Creating an RDS DB instance
