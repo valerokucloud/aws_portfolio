@@ -58,6 +58,12 @@ The projects are categorized into three levels:
   - **Services used**: S3, Quicksight (one month free tier)
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Visualizing%20insights%20with%20Quicksight.md)
 
+3. Recipe Web Application
+  
+  - **Description**: in this project, we have developed a serverless application for sharing recipes. 
+  - **Services used**: Lambda, API Gateway (backend) and Cognito for the authentication.
+  - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Visualizing%20insights%20with%20Quicksight.md)
+
 
 ## Advanced projects:
 
