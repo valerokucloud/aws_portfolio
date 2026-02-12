@@ -92,4 +92,4 @@
 <br>
 ## Output:
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/Architecture/output.png)
