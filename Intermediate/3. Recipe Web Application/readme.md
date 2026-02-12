@@ -16,7 +16,7 @@
 
 <br>
 
-**1. S3 Buckets Creation**
+**1. S3 Bucket Creation**
 * Created an S3 bucket to host the frontend static website.
 * Enabled static website hosting.
 * Applied read access policy for content delivery.
