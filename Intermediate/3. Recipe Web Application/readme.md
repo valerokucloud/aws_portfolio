@@ -82,14 +82,16 @@
   * Amazon Cognito
   * Amazon API Gateway
   * AWS Region configuration
+
+<br>
 * Navigate to the frontend project directory (where package.json is located) using the terminal.
 * Install project dependencies:
   * npm install
 * Build the production-ready application:
   * npm run build
-* Upload the entire contents of the dist/ directory to the S3 frontend bucket.
+* Upload the entire contents of the dist/ directory to the S3 frontend bucket:
 
-![S3 Deployment Screenshot](./images/s3-upload.png)
+![S3 Deployment Screenshot](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/dist_config.png)
 
 
 
