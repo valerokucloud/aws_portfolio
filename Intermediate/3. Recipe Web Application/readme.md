@@ -73,6 +73,31 @@
 
 <br>
 
+**8. Frontend Configuration, Build and S3 Deployment**
+* After deploying the infrastructure with Terraform, retrieve the required values from the Terraform outputs.
+* Update the following frontend configuration base files (src/configs) using those outputs:
+  * aws-exports.ts → Configure AWS region, Cognito User Pool ID, and Cognito App Client ID.
+  * configs.tsx → Configure the API endpoint (API Gateway URL) and application settings.
+* These values correspond to the AWS services created by Terraform, including:
+  * Amazon Cognito
+  * Amazon API Gateway
+  * AWS Region configuration
+* Navigate to the frontend project directory (where package.json is located) using the terminal.
+* Install project dependencies:
+  * npm install
+* Build the production-ready application:
+  * npm run build
+* Upload the entire contents of the dist/ directory to the S3 frontend bucket.
+
+![S3 Deployment Screenshot](./images/s3-upload.png)
+
+
+
+* Once uploaded, access the frontend application through the CloudFront distribution URL.
+
+
+
+
 ## Result
 * Fully serverless AWS infrastructure.
 * Scalable and cost-efficient architecture.
