@@ -87,7 +87,7 @@
 
 ## Architecture:
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.Recipe Web Application\Architecture/principal_arch.png)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/Architecture/principal_arch.png)
 
 
 ## Output:
