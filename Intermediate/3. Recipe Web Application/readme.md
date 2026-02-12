@@ -14,6 +14,8 @@
 
 ### Steps: 
 
+<br>
+
 **1. S3 Buckets Creation**
 * Created an S3 bucket to host the frontend static website.
 * Enabled static website hosting.
