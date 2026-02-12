@@ -76,9 +76,9 @@
 
 <br>
 
-**8. Frontend Configuration, Build and S3 Deployment**
+**8. Frontend Configuration**
 * After deploying the infrastructure with Terraform, retrieve the required values from the Terraform outputs.
-* Update the following frontend configuration base files (src/configs) using those outputs:
+* Update the following frontend configuration files using those outputs:
   * aws-exports.ts → Configure AWS region, Cognito User Pool ID, and Cognito App Client ID.
   * configs.tsx → Configure the API endpoint (API Gateway URL) and application settings.
 * These values correspond to the AWS services created by Terraform, including:
@@ -88,6 +88,7 @@
 
 <br>
 
+**9. Frontend Build and S3 Deployment**
 * Navigate to the frontend project directory (where package.json is located) using the terminal.
 * Install project dependencies:
   * npm install
@@ -97,11 +98,7 @@
 
 ![S3 Deployment Screenshot](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/dist_config.png)
 
-
-
 * Once uploaded, access the frontend application through the CloudFront distribution URL.
-
-
 
 
 ## Result
