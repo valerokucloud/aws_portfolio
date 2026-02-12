@@ -65,6 +65,7 @@
 * Defined resources and HTTP methods.
 * Integrated each endpoint with its corresponding Lambda function.
 * Enabled Cognito authorization for protected routes.
+<br>
 
 ## Result
 * Fully serverless AWS infrastructure.
@@ -86,9 +87,9 @@
 
 ## Architecture:
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/principal_arch.png)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.Recipe Web Application\Architecture/principal_arch.png)
 
 
 ## Output:
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%)
