@@ -8,6 +8,7 @@
 
 
 <br>
+
 ## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
  
 
