@@ -43,6 +43,9 @@
 * Created an Amazon Cognito User Pool.
 * Configured user authentication and authorization settings.
 * Prepared Cognito to secure backend API endpoints.
+* During the admin user creation process, a valid email address must be specified.
+* Amazon Cognito automatically sends the admin username and temporary password to the registered email.
+
 <br>
 
 **5. IAM Roles and Policies**
