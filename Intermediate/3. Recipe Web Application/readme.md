@@ -84,6 +84,7 @@
   * AWS Region configuration
 
 <br>
+
 * Navigate to the frontend project directory (where package.json is located) using the terminal.
 * Install project dependencies:
   * npm install
