@@ -65,8 +65,8 @@
 * Defined resources and HTTP methods.
 * Integrated each endpoint with its corresponding Lambda function.
 * Enabled Cognito authorization for protected routes.
-<br>
 
+<br>
 ## Result
 * Fully serverless AWS infrastructure.
 * Scalable and cost-efficient architecture.
@@ -84,12 +84,12 @@
 *[Using AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 
  
-
+<br>
 ## Architecture:
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/Architecture/principal_arch.png)
 
-
+<br>
 ## Output:
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%)
