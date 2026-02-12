@@ -7,7 +7,7 @@
 * [Antonio Valero](https://www.linkedin.com/in/avalero89/) 
 
 
- 
+<br>
 ## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
  
 
