@@ -17,6 +17,7 @@
 * Applied read access policy for content delivery.
 * Uploaded frontend assets (HTML, CSS, images).
 * Created an additional S3 bucket to store application assets (e.g. recipe images).
+<br>
 
 2. CloudFront Distribution
 * Created a CloudFront distribution.
@@ -24,17 +25,20 @@
 * Enabled Origin Access Control (OAC).
 * Updated the S3 bucket policy to allow CloudFront access.
 * Validated the distribution once the status was set to *Enabled*.
+<br>
 
 3. DynamoDB Table
 * Created a DynamoDB table to store recipes data.
 * Defined the primary key structure.
 * Configured billing mode for scalability.
 * Prepared the table for Lambda integration.
+<br>
 
 4. Cognito User Authentication
 * Created an Amazon Cognito User Pool.
 * Configured user authentication and authorization settings.
 * Prepared Cognito to secure backend API endpoints.
+<br>
 
 5. IAM Roles and Policies
 * Created IAM roles for Lambda execution.
@@ -43,6 +47,7 @@
   * S3
   * CloudWatch Logs
 * Applied the principle of least privilege.
+<br>
 
 6. Lambda Functions
 * Created multiple AWS Lambda functions to handle backend logic:
@@ -53,6 +58,7 @@
   * Delete recipe
   * Like recipe
 * Configured runtime, permissions, and environment variables.
+<br>
 
 7. API Gateway
 * Created an Amazon API Gateway REST API.
