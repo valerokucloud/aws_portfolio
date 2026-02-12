@@ -78,13 +78,13 @@
 
 
 ## References
--[Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)<br>
--[Using Amazon CloudFront](https://docs.aws.amazon.com/cloudfront/)<br>
--[Using Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)<br>
--[Using AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)<br>
--[Using Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)<br>
--[Using Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/)<br>
--[Using AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>
+*[Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)<br>
+*[Using Amazon CloudFront](https://docs.aws.amazon.com/cloudfront/)<br>
+*[Using Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)<br>
+*[Using AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)<br>
+*[Using Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)<br>
+*[Using Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/)<br>
+*[Using AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>
 
  
 <br>
