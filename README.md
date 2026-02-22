@@ -8,7 +8,7 @@ The projects are categorized into three levels:
 
 ## Beginner projects:
 
-1. Creating three billing alarms
+**1. Creating three billing alarms**
    
   - **Description**: this project involves creating and setting up a list of billing alarms for estimating charges
   - **Services used**: CloudWatch, SNS
@@ -16,7 +16,7 @@ The projects are categorized into three levels:
 
 <br>
 
-2. Creating a DynamoDB table
+**2. Creating a DynamoDB table**
   
   - **Description**: this project involves creating a DynamoDB table.
   - **Services used**: DynamoDB
@@ -24,7 +24,7 @@ The projects are categorized into three levels:
 
 <br>
 
-3. Creating a VPC + EC2 instances
+**3. Creating a VPC + EC2 instances**
   
   - **Description**: this project involves creating a VPC + routing + EC2 instances in public and private subnets
   - **Services used**: VPC, EC2, Internet GW, NAT GW
@@ -32,7 +32,7 @@ The projects are categorized into three levels:
 
 <br>
 
-4. Creating an IAM user + security policies
+**4. Creating an IAM user + security policies**
   
   - **Description**: this project involves creating a new user in IAM with console access, adding to the Admin group + Admin. managed policy, enabling MFA for the root user and applying an IAM password policy that follows security best practices
   - **Services used**: IAM Access Management
@@ -40,7 +40,7 @@ The projects are categorized into three levels:
 
 <br>
 
-5. Creating an RDS DB instance
+**5. Creating an RDS DB instance**
   
   - **Description**: this project involves creating an RDS DB instance (MySQL Engine).
   - **Services used**: RDS
@@ -50,14 +50,14 @@ The projects are categorized into three levels:
 
 ## Intermediate projects:
 
-1. MyCV
+**1. MyCV**
   
   - **Description**: this project involves creating and setting up a bucket of static content and upload our personal CV.
   - **Services used**: S3, CloudFront (opt.), CloudWatch (opt), Certificate Manager (opt).
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/MyCV.md)
 <br>
 
-2. Visualizing Insights with QuickSight
+**2. Visualizing Insights with QuickSight**
   
   - **Description**: in this project, we delve into the potent combination of AWS QuickSight and Amazon S3, showcasing their ability to turn your data into compelling visual representations.
   - **Services used**: S3, Quicksight (one month free tier)
@@ -65,14 +65,14 @@ The projects are categorized into three levels:
 <br>
 
 
-3. Recipe Web Application
+**3. Recipe Web Application**
   
   - **Description**: in this project, we have developed a serverless application for sharing recipes. 
   - **Services used**: Lambda, API Gateway (backend) and Cognito for the authentication.
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/readme.md)
 <br>
 
-4. Image Analyzer
+**4. Image Analyzer**
   
   - **Description**: this project deploys a fully serverless AWS backend with Terraform that enables secure image uploads to S3 and performs automated face and emotion analysis using Rekognition.
   - **Services used**: S3, Lambda, API GW, Rekognition, IAM.

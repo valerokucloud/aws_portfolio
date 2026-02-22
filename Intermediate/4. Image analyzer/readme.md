@@ -108,6 +108,7 @@
 * Save into 'body.json' the content of 'fileKey' variable to avoid parsing problems with double quotes:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/filekey.png)
 <br>
+
 * Tested image analysis endpoint:
 
 *curl.exe -X POST https://x0mel1aadb.execute-api.eu-south-2.amazonaws.com/analyze*
