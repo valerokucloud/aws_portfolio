@@ -1,4 +1,4 @@
-# 3. Building a Serverless Recipe-Sharing Application
+# 4. Building an Image analyzer.
  
 ## Difficulty: Intermediate
 
@@ -16,116 +16,123 @@
 
 <br>
 
-**1. S3 Bucket Creation**
-* Created an S3 bucket to host the frontend static website.
-* Enabled static website hosting.
-* Applied read access policy for content delivery.
-* Uploaded frontend assets (HTML, CSS, images).
-* Created an additional S3 bucket to store application assets (e.g. recipe images).
+**1. Local architecture definition**
+* Defined a centralized local configuration describing the full infrastructure architecture.
+* Declared Lambda functions, IAM roles, permissions, and API routes in a single structure.
+* Enabled dynamic resource creation using Terraform for_each.
+* Designed the infrastructure to be scalable and easily extendable.
 <br>
 
-**2. CloudFront Distribution**
-* Created a CloudFront distribution.
-* Configured the frontend S3 bucket as the origin.
-* Enabled Origin Access Control (OAC).
-* Updated the S3 bucket policy to allow CloudFront access.
-* Validated the distribution once the status was set to *Enabled*.
+**2. S3 bucket creation**
+* Created an S3 bucket to store uploaded images.
+* Configured the bucket with public access blocked for security.
+* Used the bucket as storage backend for application uploads.
 <br>
 
-**3. DynamoDB Table**
-* Created a DynamoDB table to store recipes data.
-* Defined the primary key structure.
-* Configured billing mode for scalability.
-* Prepared the table for Lambda integration.
+**3. IAM role creation**
+* Created an execution role for Lambda functions.
+* Configured trust policy allowing Lambda service to assume the role.
+* Established secure permission boundaries for serverless resources.
 <br>
 
-**4. Cognito User Authentication**
-* Created an Amazon Cognito User Pool.
-* Configured user authentication and authorization settings.
-* Prepared Cognito to secure backend API endpoints.
-* During the admin user creation process, a valid email address must be specified.
-* Amazon Cognito automatically sends the admin username and temporary password to the registered email.
-
+**4. IAM policy assignment**
+* Generated IAM policies dynamically based on each Lambda’s needs.
+* Applied least-privilege permissions for each function.
+* Granted CloudWatch logging permissions.
+* Added Rekognition permissions only to the analysis function.
+* Attached policies to the execution role.
 <br>
 
-**5. IAM Roles and Policies**
-* Created IAM roles for Lambda execution.
-* Attached policies allowing access to:
-  * DynamoDB
-  * S3
-  * CloudWatch Logs
-* Applied the principle of least privilege.
+**5. Lambda packaging (.py files)**
+* Automatically packaged Python source files into ZIP archives.
+* Generated hashes to detect code changes.
+* Prepared deployment artifacts dynamically during Terraform execution.
 <br>
 
-**6. Lambda Functions**
-* Created multiple AWS Lambda functions to handle backend logic:
-  * Authentication
-  * Health check
-  * Get recipes
-  * Create recipe
-  * Delete recipe
-  * Like recipe
-* Configured runtime, permissions, and environment variables.
+**6. API GW creation**
+* Provisioned an HTTP API Gateway.
+* Configured API name and endpoint type.
+* Established public entry point for backend services.
 <br>
 
-**7. API Gateway**
-* Created an Amazon API Gateway REST API.
-* Defined resources and HTTP methods.
-* Integrated each endpoint with its corresponding Lambda function.
-* Enabled Cognito authorization for protected routes.
-
+**7. API integration setup**
+* Connected API routes to corresponding Lambda functions.
+* Used AWS_PROXY integration to forward full HTTP requests.
+* Enabled seamless communication between API Gateway and Lambdas.
 <br>
 
-**8. Frontend Configuration**
-* After deploying the infrastructure with Terraform, retrieve the required values from the Terraform outputs.
-* Update the following frontend configuration files using those outputs:
-  * aws-exports.ts → Configure AWS region, Cognito User Pool ID, and Cognito App Client ID.
-  * configs.tsx → Configure the API endpoint (API Gateway URL) and application settings.
-* These values correspond to the AWS services created by Terraform, including:
-  * Amazon Cognito
-  * Amazon API Gateway
-  * AWS Region configuration
-
+**8. (API GW) Route configuration**
+* Created API routes dynamically from local configuration.
+* Defined endpoints:
+* GET endpoint for upload URL generation
+* POST endpoint for image analysis
+* Linked each route to its correct Lambda integration.
 <br>
 
-**9. Frontend Build and S3 Deployment**
-* Navigate to the frontend project directory (where package.json is located) using the terminal.
-* Install project dependencies:
-  * npm install
-* Build the production-ready application:
-  * npm run build
-* Upload the entire contents of the dist/ directory to the S3 frontend bucket:
+**9. Lambda Invocation Permissions**
+* Granted API Gateway permission to invoke Lambda functions.
+* Scoped permissions to specific API execution ARNs.
+* Ensured secure service-to-service invocation.
+<br>
 
-![S3 Deployment Screenshot](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/dist_config.png)
+**10. Deployment stage configuration**
+* Created default API Gateway stage.
+* Enabled automatic deployment of changes.
+* Ensured updates are published immediately after Terraform apply.
+<br>
 
-* Once uploaded, access the frontend application through the CloudFront distribution URL.
+**11. Output exposure**
+* Exported API endpoint URL as Terraform output.
+* Simplified testing and external integration.
+<br>
 
+**12. Application testing**
+* Validated the API by sending HTTP requests directly to the API Gateway endpoint.
+* Tested presigned URL generation endpoint:
+
+curl -X GET https://YOUR_API_ID.execute-api.REGION.amazonaws.com/upload-url
+
+* Uploaded an image using the returned presigned URL:
+
+curl -X PUT "<PRESIGNED_URL>"
+-H "Content-Type: image/jpeg"
+--data-binary "@image.jpg"
+
+* Tested image analysis endpoint:
+
+curl -X POST https://YOUR_API_ID.execute-api.REGION.amazonaws.com/analyze
+-H "Content-Type: application/json"
+-d '{"fileKey":"uploads/FILE_NAME.jpg"}'
+
+* Verified correct system behavior:
+
+* Upload URL generated successfully (image stored in S3 bucket).
+
+Rekognition returned detected faces and emotions.
+
+Note: Replace API_ID, REGION, and FILE_NAME with your actual deployment values.
+<br>
 
 ## Result
-* Fully serverless AWS infrastructure.
-* Scalable and cost-efficient architecture.
-* Static frontend delivered globally through CloudFront.
+* Fully serverless AWS backend architecture.
+* Secure direct image uploads to S3 using presigned URLs.
+* Automated face detection and emotion analysis with Rekognition.
+* Public HTTP API endpoint powered by API Gateway and Lambda.
+* Scalable and cost-efficient event-driven design.
 * Infrastructure fully reproducible using Terraform.
 
 
 ## References
--[Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)<br>
--[Using Amazon CloudFront](https://docs.aws.amazon.com/cloudfront/)<br>
--[Using Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)<br>
--[Using AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)<br>
--[Using Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)<br>
--[Using Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/)<br>
--[Using AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>
-
+- [Using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)<br>
+- [Uploading objects with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html)<br>
+- [Using Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)<br>
+- [Using AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)<br>
+- [Using Amazon Rekognition](https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html)<br>
+- [Using AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>
  
 <br>
 
 ## Architecture:
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/Architecture/principal_arch.png)
-
 <br>
-
-## Output:
-
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/Architecture/output.png)
