@@ -9,8 +9,9 @@
 <br>
 
 ## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
- 
 
+ This project provisions a fully serverless image analysis backend on AWS using Terraform. It allows clients to securely upload images to S3 via presigned URLs and processes them with AWS Rekognition to detect faces and analyze emotions. The infrastructure is fully automated, scalable, and follows least-privilege security principles.
+<br>
 ## Architecture:
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
@@ -93,7 +94,7 @@
 * Validated the API by sending HTTP requests directly to the API Gateway endpoint.
 * Tested presigned URL generation endpoint (in our case we used W11 Powershell):
 
-curl.exe -X GET https://YOUR_API_ID.execute-api.REGION.amazonaws.com/upload-url
+*curl.exe -X GET https://YOUR_API_ID.execute-api.REGION.amazonaws.com/upload-url*
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/1.png)
 <br>
@@ -105,7 +106,8 @@ curl.exe -X GET https://YOUR_API_ID.execute-api.REGION.amazonaws.com/upload-url
 
 * Uploaded an image using the returned presigned URL:
 
-curl.exe -X PUT -H "Content-Type: image/jpeg" --upload-file goodphoto.jpeg "$URL" 
+*curl.exe -X PUT -H "Content-Type: image/jpeg"*
+*--upload-file goodphoto.jpeg "$URL"*
 
 * Save into 'body.json' the content of 'fileKey' variable to avoid parsing problems with double quotes:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/filekey.png)
@@ -113,17 +115,16 @@ curl.exe -X PUT -H "Content-Type: image/jpeg" --upload-file goodphoto.jpeg "$URL
 
 * Tested image analysis endpoint:
 
-curl.exe -X POST https://x0mel1aadb.execute-api.eu-south-2.amazonaws.com/analyze 
--H "Content-Type: application/json" -d "@body.json"  
+*curl.exe -X POST https://x0mel1aadb.execute-api.eu-south-2.amazonaws.com/analyze*
+*-H "Content-Type: application/json" -d "@body.json"*  
 
 
 * Verified correct system behavior:
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/4.png)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/3.png)
 <br>
 
 * Upload URL generated successfully (image stored in S3 bucket).
 * Rekognition returned detected faces and emotions.
-
 
 <br>
 
@@ -144,5 +145,4 @@ curl.exe -X POST https://x0mel1aadb.execute-api.eu-south-2.amazonaws.com/analyze
 - [Using Amazon Rekognition](https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html)<br>
 - [Using AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>
  
-<br>
 
