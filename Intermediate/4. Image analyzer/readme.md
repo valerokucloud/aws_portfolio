@@ -5,7 +5,6 @@
 ## Project’s Author 
 * This project was inspired by the book [**AWS Cloud Projects: Strengthen Your AWS Skills Through Practical Projects, from Websites to Advanced AI Applications**](https://www.packtpub.com/en-be/product/aws-cloud-projects-9781835889282) by Ivo Pinto and Pedro Santos.
 * [Antonio Valero](https://www.linkedin.com/in/avalero89/) 
-
 <br>
 
 ## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
@@ -16,7 +15,6 @@
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
 <br>
-
 ### Steps: 
 <br>
 
@@ -103,7 +101,6 @@
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/2.png)
 <br>
 
-
 * Uploaded an image using the returned presigned URL:
 
 *curl.exe -X PUT -H "Content-Type: image/jpeg"*
@@ -112,7 +109,6 @@
 * Save into 'body.json' the content of 'fileKey' variable to avoid parsing problems with double quotes:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/filekey.png)
 <br>
-
 * Tested image analysis endpoint:
 
 *curl.exe -X POST https://x0mel1aadb.execute-api.eu-south-2.amazonaws.com/analyze*
@@ -125,7 +121,6 @@
 
 * Upload URL generated successfully (image stored in S3 bucket).
 * Rekognition returned detected faces and emotions.
-
 <br>
 
 ## Result
