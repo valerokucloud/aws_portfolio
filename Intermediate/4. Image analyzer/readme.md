@@ -3,7 +3,6 @@
 ## Difficulty: Intermediate
 
 ## Project’s Author 
-* This project was inspired by the book [**AWS Cloud Projects: Strengthen Your AWS Skills Through Practical Projects, from Websites to Advanced AI Applications**](https://www.packtpub.com/en-be/product/aws-cloud-projects-9781835889282) by Ivo Pinto and Pedro Santos.
 * [Antonio Valero](https://www.linkedin.com/in/avalero89/) 
 <br>
 
