@@ -6,7 +6,6 @@
 * This project was inspired by the book [**AWS Cloud Projects: Strengthen Your AWS Skills Through Practical Projects, from Websites to Advanced AI Applications**](https://www.packtpub.com/en-be/product/aws-cloud-projects-9781835889282) by Ivo Pinto and Pedro Santos.
 * [Antonio Valero](https://www.linkedin.com/in/avalero89/) 
 
-
 <br>
 
 ## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
@@ -134,5 +133,5 @@ Note: Replace API_ID, REGION, and FILE_NAME with your actual deployment values.
 
 ## Architecture:
 
-![Imagen](https://https://github.com/valerokucloud/aws_portfolio/tree/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
 <br>
