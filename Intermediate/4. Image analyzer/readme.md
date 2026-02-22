@@ -11,6 +11,12 @@
 ## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
  
 
+## Architecture:
+
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
+<br>
+
+
 ### Steps: 
 
 <br>
@@ -87,9 +93,17 @@
 
 **12. Application testing**
 * Validated the API by sending HTTP requests directly to the API Gateway endpoint.
-* Tested presigned URL generation endpoint:
+* Tested presigned URL generation endpoint (in our case we used W11 Powershell):
 
-curl -X GET https://YOUR_API_ID.execute-api.REGION.amazonaws.com/upload-url
+curl.exe -X GET https://YOUR_API_ID.execute-api.REGION.amazonaws.com/upload-url
+
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
+<br>
+
+* Save into '$URL' variable the value for 'uploadUrl'.
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
+<br>
+
 
 * Uploaded an image using the returned presigned URL:
 
@@ -97,6 +111,7 @@ curl -X PUT "<PRESIGNED_URL>"
 -H "Content-Type: image/jpeg"
 --data-binary "@image.jpg"
 
+* Save into 'body.json' the content of 'fileKey' variable to avoid parsing problems with double quotes:
 * Tested image analysis endpoint:
 
 curl -X POST https://YOUR_API_ID.execute-api.REGION.amazonaws.com/analyze
@@ -104,6 +119,8 @@ curl -X POST https://YOUR_API_ID.execute-api.REGION.amazonaws.com/analyze
 -d '{"fileKey":"uploads/FILE_NAME.jpg"}'
 
 * Verified correct system behavior:
+
+
 
 * Upload URL generated successfully (image stored in S3 bucket).
 
@@ -131,7 +148,3 @@ Note: Replace API_ID, REGION, and FILE_NAME with your actual deployment values.
  
 <br>
 
-## Architecture:
-
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
-<br>
