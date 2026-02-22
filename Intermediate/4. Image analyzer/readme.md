@@ -95,11 +95,11 @@
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/1.png)
 <br>
 
-* Save into '$URL' variable the value for 'uploadUrl'.
+* Save into '$URL' variable the value for 'uploadUrl':
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/2.png)
 <br>
 
-* Uploaded an image using the returned presigned URL:
+* Uploaded an image using the returned presigned URL.
 
 *curl.exe -X PUT -H "Content-Type: image/jpeg"*
 *--upload-file goodphoto.jpeg "$URL"*
@@ -108,7 +108,7 @@
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/filekey.png)
 <br>
 
-* Tested image analysis endpoint:
+* Tested image analysis endpoint.
 
 *curl.exe -X POST https://x0mel1aadb.execute-api.eu-south-2.amazonaws.com/analyze*
 *-H "Content-Type: application/json" -d "@body.json"*  
