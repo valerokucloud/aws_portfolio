@@ -16,9 +16,7 @@
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
 <br>
 
-
 ### Steps: 
-
 <br>
 
 **1. Local architecture definition**
@@ -97,36 +95,36 @@
 
 curl.exe -X GET https://YOUR_API_ID.execute-api.REGION.amazonaws.com/upload-url
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/1.png)
 <br>
 
 * Save into '$URL' variable the value for 'uploadUrl'.
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/2.png)
 <br>
 
 
 * Uploaded an image using the returned presigned URL:
 
-curl -X PUT "<PRESIGNED_URL>"
--H "Content-Type: image/jpeg"
---data-binary "@image.jpg"
+curl.exe -X PUT -H "Content-Type: image/jpeg" --upload-file goodphoto.jpeg "$URL" 
 
 * Save into 'body.json' the content of 'fileKey' variable to avoid parsing problems with double quotes:
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/filekey.png)
+<br>
+
 * Tested image analysis endpoint:
 
-curl -X POST https://YOUR_API_ID.execute-api.REGION.amazonaws.com/analyze
--H "Content-Type: application/json"
--d '{"fileKey":"uploads/FILE_NAME.jpg"}'
+curl.exe -X POST https://x0mel1aadb.execute-api.eu-south-2.amazonaws.com/analyze 
+-H "Content-Type: application/json" -d "@body.json"  
+
 
 * Verified correct system behavior:
-
-
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/4.png)
+<br>
 
 * Upload URL generated successfully (image stored in S3 bucket).
+* Rekognition returned detected faces and emotions.
 
-Rekognition returned detected faces and emotions.
 
-Note: Replace API_ID, REGION, and FILE_NAME with your actual deployment values.
 <br>
 
 ## Result
