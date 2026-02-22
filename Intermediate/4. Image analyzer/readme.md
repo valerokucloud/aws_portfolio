@@ -12,9 +12,8 @@
  This project provisions a fully serverless image analysis backend on AWS using Terraform. It allows clients to securely upload images to S3 via presigned URLs and processes them with AWS Rekognition to detect faces and analyze emotions. The infrastructure is fully automated, scalable, and follows least-privilege security principles.
 <br>
 ## Architecture:
-
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
-<br>
+
 ### Steps: 
 <br>
 
@@ -118,7 +117,6 @@
 * Verified correct system behavior:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/3.png)
 <br>
-
 * Upload URL generated successfully (image stored in S3 bucket).
 * Rekognition returned detected faces and emotions.
 <br>

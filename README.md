@@ -64,11 +64,19 @@ The projects are categorized into three levels:
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Visualizing%20insights%20with%20Quicksight.md)
 <br>
 
+
 3. Recipe Web Application
   
   - **Description**: in this project, we have developed a serverless application for sharing recipes. 
   - **Services used**: Lambda, API Gateway (backend) and Cognito for the authentication.
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/readme.md)
+<br>
+
+4. Image Analyzer
+  
+  - **Description**: this project deploys a fully serverless AWS backend with Terraform that enables secure image uploads to S3 and performs automated face and emotion analysis using Rekognition.
+  - **Services used**: S3, Lambda, API GW, Rekognition, IAM.
+  - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/tree/main/Intermediate/4.%20Image%20analyzer)
 
 
 ## Advanced projects:
