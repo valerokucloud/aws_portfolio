@@ -134,5 +134,5 @@ Note: Replace API_ID, REGION, and FILE_NAME with your actual deployment values.
 
 ## Architecture:
 
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/Architecture/principal_arch.png)
+![Imagen](https://https://github.com/valerokucloud/aws_portfolio/tree/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
 <br>
