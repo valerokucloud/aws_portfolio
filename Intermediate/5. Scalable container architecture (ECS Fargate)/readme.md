@@ -6,14 +6,39 @@
 * [Antonio Valero](https://www.linkedin.com/in/avalero89/) 
 <br>
 
-## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
+## Project overview: showcase of your skills, experience and accomplishments to potential employers or clients. 
 
  This project provisions a simple Flask-based REST API that stores and retrieves messages from a PostgreSQL DB (RDS), running in a Docker container on ECS Fargate behind an Application Load Balancer.
 <br>
 ## Architecture:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
+<br>
 
-### Steps: 
+## Best practices
+* Infrastructure as Code using Terraform for reproducible deployments.
+* Containerized application deployment with Docker on ECS Fargate.
+* Secure credential management using AWS Secrets Manager.
+* Network isolation with RDS deployed in private subnets inside a VPC.
+* Least-privilege access control using IAM roles and Security Groups.
+* Centralized logging and monitoring with Amazon CloudWatch.
+<br>
+
+## Project results
+* Private cloud networking using VPC + public/private subnets.
+* Containerized Flask REST API deployed on ECS Fargate.
+* HTTP access through an Application Load Balancer.
+* PostgreSQL DB hosted on RDS for data persistence.
+* Secure DB credentials managed with Secrets Manager.
+* Private cloud networking using VPC + public/private subnets.
+* Container logs collected and monitored with CloudWatch.
+* Infrastructure fully reproducible using Terraform.
+<br>
+
+## 
+* 
+
+
+### Deployment: 
 <br>
 
 **1. **
@@ -66,16 +91,6 @@
 * 
 <br>
 
-
-## Result
-* Private cloud networking using VPC + public/private subnets.
-* Containerized Flask REST API deployed on ECS Fargate.
-* HTTP access through an Application Load Balancer.
-* PostgreSQL DB hosted on RDS for data persistence.
-* Secure DB credentials managed with Secrets Manager.
-* Private cloud networking using VPC + public/private subnets.
-* Container logs collected and monitored with CloudWatch.
-* Infrastructure fully reproducible using Terraform.
 
 
 ## References
