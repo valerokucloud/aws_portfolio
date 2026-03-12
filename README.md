@@ -83,7 +83,7 @@ The projects are categorized into three levels:
   
   - **Description**: this project deploys a containerized Flask API deployed on Fargate behind an Application Load Balancer, connected to a RDS DB (PostgreSQL) with the entire infrastructure.
   - **Services used**: VPC, Security Groups, IAM, ALB, Fargate, RDS, Secrets Manager, CloudWatch Logs, ECR/DockerHub.
-  - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/tree/main/Intermediate/4.%20Image%20analyzer)
+  - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/tree/main/Intermediate/5.%20Scalable%20container%20architecture%20(ECS%20Fargate))
 <br>
 
 ## Advanced projects:
