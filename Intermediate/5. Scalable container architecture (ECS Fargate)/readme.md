@@ -16,126 +16,76 @@
 ### Steps: 
 <br>
 
-**1. Local architecture definition**
-* Defined a centralized local configuration describing the full infrastructure architecture.
-* Declared Lambda functions, IAM roles, permissions, and API routes in a single structure.
-* Enabled dynamic resource creation using Terraform for_each.
-* Designed the infrastructure to be scalable and easily extendable.
+**1. **
+* 
+* 
 <br>
 
-**2. S3 bucket creation**
-* Created an S3 bucket to store uploaded images.
-* Configured the bucket with public access blocked for security.
-* Used the bucket as storage backend for application uploads.
+**2. **
+* 
+* 
 <br>
 
-**3. IAM role creation**
-* Created an execution role for Lambda functions.
-* Configured trust policy allowing Lambda service to assume the role.
-* Established secure permission boundaries for serverless resources.
+**3. **
+* 
+* 
 <br>
 
-**4. IAM policy assignment**
-* Generated IAM policies dynamically based on each Lambda’s needs.
-* Applied least-privilege permissions for each function.
-* Granted CloudWatch logging permissions.
-* Added Rekognition permissions only to the analysis function.
-* Attached policies to the execution role.
+**4. **
+* 
+* 
 <br>
 
-**5. Lambda packaging (.py files)**
-* Automatically packaged Python source files into ZIP archives.
-* Generated hashes to detect code changes.
-* Prepared deployment artifacts dynamically during Terraform execution.
+**5. **
+* 
+* 
 <br>
 
-**6. API GW creation**
-* Provisioned an HTTP API Gateway.
-* Configured API name and endpoint type.
-* Established public entry point for backend services.
+**6. **
+* 
+* 
 <br>
 
-**7. API integration setup**
-* Connected API routes to corresponding Lambda functions.
-* Used AWS_PROXY integration to forward full HTTP requests.
-* Enabled seamless communication between API Gateway and Lambdas.
+**7. **
+* 
+* 
 <br>
 
-**8. (API GW) Route configuration**
-* Created API routes dynamically from local configuration.
-* Defined endpoints:
-* GET endpoint for upload URL generation
-* POST endpoint for image analysis
-* Linked each route to its correct Lambda integration.
+**8. **
+* 
+* 
 <br>
 
-**9. Lambda Invocation Permissions**
-* Granted API Gateway permission to invoke Lambda functions.
-* Scoped permissions to specific API execution ARNs.
-* Ensured secure service-to-service invocation.
+**9. **
+* 
+* 
 <br>
 
-**10. Deployment stage configuration**
-* Created default API Gateway stage.
-* Enabled automatic deployment of changes.
-* Ensured updates are published immediately after Terraform apply.
+**10. **
+* 
+* 
 <br>
 
-**11. Output exposure**
-* Exported API endpoint URL as Terraform output.
-* Simplified testing and external integration.
-<br>
-
-**12. Application testing**
-* Validated the API by sending HTTP requests directly to the API Gateway endpoint.
-* Tested presigned URL generation endpoint (in our case we used W11 Powershell):
-
-*curl.exe -X GET https://YOUR_API_ID.execute-api.REGION.amazonaws.com/upload-url*
-
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/1.png)
-<br>
-
-* Save into '$URL' variable the value for 'uploadUrl':
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/2.png)
-<br>
-
-* Uploaded an image using the returned presigned URL.
-
-*curl.exe -X PUT -H "Content-Type: image/jpeg"*
-*--upload-file goodphoto.jpeg "$URL"*
-
-* Save into 'body.json' the content of 'fileKey' variable to avoid parsing problems with double quotes:
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/filekey.png)
-<br>
-
-* Tested image analysis endpoint.
-
-*curl.exe -X POST https://x0mel1aadb.execute-api.eu-south-2.amazonaws.com/analyze*
-*-H "Content-Type: application/json" -d "@body.json"*  
-
-
-* Verified correct system behavior:
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/App%20test/3.png)
-<br>
-* Upload URL generated successfully (image stored in S3 bucket).
-* Rekognition returned detected faces and emotions.
-<br>
 
 ## Result
-* Fully serverless AWS backend architecture.
-* Secure direct image uploads to S3 using presigned URLs.
-* Automated face detection and emotion analysis with Rekognition.
-* Public HTTP API endpoint powered by API Gateway and Lambda.
-* Scalable and cost-efficient event-driven design.
+* Private cloud networking using VPC + public/private subnets.
+* Containerized Flask REST API deployed on ECS Fargate.
+* HTTP access through an Application Load Balancer.
+* PostgreSQL DB hosted on RDS for data persistence.
+* Secure DB credentials managed with Secrets Manager.
+* Private cloud networking using VPC + public/private subnets.
+* Container logs collected and monitored with CloudWatch.
 * Infrastructure fully reproducible using Terraform.
 
 
 ## References
-- [Using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)<br>
-- [Uploading objects with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html)<br>
-- [Using Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)<br>
-- [Using AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)<br>
-- [Using Amazon Rekognition](https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html)<br>
+- [Using Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)<br>
+- [Using AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)<br>
+- [Using Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)<br>
+- [Using Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)<br>
+- [Using AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)<br>
+- [Using Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)<br>
+- [Using Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)<br>
 - [Using AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>
  
 
