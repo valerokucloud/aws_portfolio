@@ -77,7 +77,14 @@ The projects are categorized into three levels:
   - **Description**: this project deploys a fully serverless AWS backend with Terraform that enables secure image uploads to S3 and performs automated face and emotion analysis using Rekognition.
   - **Services used**: S3, Lambda, API GW, Rekognition, IAM.
   - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/tree/main/Intermediate/4.%20Image%20analyzer)
+<br>
 
+**5. Scalable container architecture (ECS Fargate)**
+  
+  - **Description**: this project deploys a containerized Flask API deployed on Fargate behind an Application Load Balancer, connected to a RDS DB (PostgreSQL) with the entire infrastructure.
+  - **Services used**: VPC, Security Groups, IAM, ALB, Fargate, RDS, Secrets Manager, CloudWatch Logs, ECR/DockerHub.
+  - **Link**: [Project directory](https://github.com/valerokucloud/aws_portfolio/tree/main/Intermediate/4.%20Image%20analyzer)
+<br>
 
 ## Advanced projects:
 
