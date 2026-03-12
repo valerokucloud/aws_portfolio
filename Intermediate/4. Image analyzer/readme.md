@@ -4,7 +4,6 @@
 
 ## Project’s Author 
 * [Antonio Valero](https://www.linkedin.com/in/avalero89/) 
-<br>
 
 ## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
 
@@ -14,7 +13,6 @@
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
 
 ### Steps: 
-<br>
 
 **1. Local architecture definition**
 * Defined a centralized local configuration describing the full infrastructure architecture.
