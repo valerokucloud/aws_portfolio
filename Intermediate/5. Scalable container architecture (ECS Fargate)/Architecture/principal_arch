@@ -19,13 +19,13 @@
         <mxCell id="HkDrAntV7dLc_Qnb8_XU-6" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#7AA116;fillColor=#F2F6E8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;" value="Public subnets&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="280" width="238" x="232" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="HkDrAntV7dLc_Qnb8_XU-25" parent="HkDrAntV7dLc_Qnb8_XU-6" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.nat_gateway;" value="NAT GW" vertex="1">
-          <mxGeometry height="68" width="68" x="85" y="118.80000000000001" as="geometry" />
+        <mxCell id="HkDrAntV7dLc_Qnb8_XU-25" parent="HkDrAntV7dLc_Qnb8_XU-6" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.nat_gateway;" value="NAT GW&amp;nbsp;&lt;br&gt;(Elastic IP)" vertex="1">
+          <mxGeometry height="68" width="68" x="98" y="118.80000000000001" as="geometry" />
         </mxCell>
         <mxCell id="HkDrAntV7dLc_Qnb8_XU-12" parent="HkDrAntV7dLc_Qnb8_XU-6" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;10.0.3.0 /24 south-2a&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;10.0.4.0 /24 south-2b&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="130" x="108" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="HkDrAntV7dLc_Qnb8_XU-8" parent="HkDrAntV7dLc_Qnb8_XU-6" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.application_load_balancer;" value="ALB&lt;div&gt;HTTP: 80&lt;/div&gt;" vertex="1">
+        <mxCell id="HkDrAntV7dLc_Qnb8_XU-8" parent="HkDrAntV7dLc_Qnb8_XU-6" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.application_load_balancer;" value="ALB" vertex="1">
           <mxGeometry height="71.1" width="71.1" x="-22" y="54.89999999999998" as="geometry" />
         </mxCell>
         <mxCell id="HkDrAntV7dLc_Qnb8_XU-7" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" value="Internet" vertex="1">
@@ -41,7 +41,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="HkDrAntV7dLc_Qnb8_XU-20" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.internet_gateway;fillColor=#F58534;gradientColor=none;" value="Internet GW" vertex="1">
-          <mxGeometry height="72" width="69" x="150" y="460" as="geometry" />
+          <mxGeometry height="72" width="69" x="210" y="460" as="geometry" />
         </mxCell>
         <mxCell id="HkDrAntV7dLc_Qnb8_XU-22" edge="1" parent="1" source="HkDrAntV7dLc_Qnb8_XU-20" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -51,6 +51,21 @@
             <mxPoint x="770" y="610" as="sourcePoint" />
             <mxPoint x="60" y="420" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="WvROkF8eu9MSBYQKs4UI-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;IGW routing:&lt;/b&gt;&amp;nbsp;(ALL traffic) from the 2 public subnets to the outside (Internet)" vertex="1">
+          <mxGeometry height="30" width="413" x="187" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="WvROkF8eu9MSBYQKs4UI-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;NAT GW routing:&lt;/b&gt;&amp;nbsp;ALL traffic from private subnets" vertex="1">
+          <mxGeometry height="30" width="273" x="187" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="WvROkF8eu9MSBYQKs4UI-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;ALB SG:&lt;/b&gt;&amp;nbsp;TCP 80 from outside (Internet) to &amp;amp; ALL from inside to Internet. Target group + listener HTTP 80" vertex="1">
+          <mxGeometry height="30" width="573" x="187" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="WvROkF8eu9MSBYQKs4UI-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;ECS SG:&lt;/b&gt;&amp;nbsp;TCP 80 from ALB &amp;amp; ALL from ECS to ALB" vertex="1">
+          <mxGeometry height="30" width="283" x="187" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="WvROkF8eu9MSBYQKs4UI-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;RDS SG:&lt;/b&gt;&amp;nbsp;TCP 5432 (RDS) from ECS SG" vertex="1">
+          <mxGeometry height="30" width="233" x="187" y="720" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
