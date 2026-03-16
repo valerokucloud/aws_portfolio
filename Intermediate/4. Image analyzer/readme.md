@@ -13,7 +13,7 @@
 ## Architecture:
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
 
-### Steps: 
+### Deployment: 
 
 **1. Local architecture definition**
 * Defined a centralized local configuration describing the full infrastructure architecture.
