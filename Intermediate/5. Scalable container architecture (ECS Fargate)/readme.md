@@ -11,7 +11,7 @@
  This project provisions a simple Flask-based REST API that stores and retrieves messages from a PostgreSQL DB (RDS), running in a Docker container on ECS Fargate behind an Application Load Balancer.
 <br>
 ## Architecture:
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/4.%20Image%20analyzer/Architecture/principal_arch.png)
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/5.%20Scalable%20container%20architecture%20(ECS%20Fargate)/Architecture/principal_arch.png)
 <br>
 
 ## References
