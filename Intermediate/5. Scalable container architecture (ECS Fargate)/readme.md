@@ -84,15 +84,15 @@
   * Dockerfile
   * App.py
   * Requirements.txt 
-* Build the image from the application directory '(TF directory/app)'. This command creates a Docker image containing the Flask application and its dependencies.
+* Build the image from the application directory '(TF directory/app)'. This command creates a Docker image containing the Flask application and its dependencies.<br>
   docker build -t <dockerhub_user>/ecs-flask-api:latest .
 <br>
 
 **9. Push the image to Docker Hub**
 * Login to Docker Hub:
   docker login
-* Push the image:
-  docker push <dockerhub_user>/ecs-flask-api:latest
+* Push the image:<br>
+  docker push <dockerhub_user>/ecs-flask-api:latest <br>
   Once uploaded, ECS can download the image directly from Docker Hub
 <br>
 
