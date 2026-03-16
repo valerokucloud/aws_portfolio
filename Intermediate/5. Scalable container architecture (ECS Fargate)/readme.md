@@ -27,7 +27,7 @@
 ### Deployment: 
 <br>
 
-**1.Network infrastructure**
+**1. Network infrastructure**
 * VPC creation.
 * Public subnets: used by the Application Load Balancer (ALB).
 * Private subnets: used by ECS Fargate tasks and RDS PostgreSQL DB (not accessible from the Internet).
@@ -35,17 +35,17 @@
 * NAT Gateway: allow resources in private subnets to access for outbound traffic.
 <br>
 
-**2.Security**
+**2. Security**
 * Load Balacer Security Group: allow HTTP traffic (port 80) from the Internet.
 * ECS Security Group: allows traffic only from the ALB. This prevent direct internet access to the containers.
 * RDS Security Group: allow DB connections (port 5432) only from ECS. This protect the DB from external access.
 <br>
 
-**3.Database (RDS PostgreSQL)**
+**3. Database (RDS PostgreSQL)**
 * RDS PostgreSQL instance deployed in private subnets (2, in different AZs for High Availability).
 <br>
 
-**4.Application Load Balancer**
+**4. Application Load Balancer**
 * Main responsibilities: receive HTTP traffic --> forward requests to ECS asks + perform health checks.
 <br>
 
@@ -86,7 +86,7 @@
 <br>
 
 **10. Deploying the infrastructure**
-
+<br>
 
 ## Project results
 * Private cloud networking using VPC + public/private subnets.
@@ -98,7 +98,6 @@
 * Container logs collected and monitored with CloudWatch.
 * Infrastructure fully reproducible using Terraform.
 <br>
-
 
 
 ## References
