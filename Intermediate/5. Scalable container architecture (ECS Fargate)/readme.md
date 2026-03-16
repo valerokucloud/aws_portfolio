@@ -66,7 +66,7 @@
 <br>
 
 **6. ECS Fargate**
-* ECS Cluster: logical grouping of container services
+* ECS Cluster: logical grouping of container services.
 * Task definition: defines how the container runs (Docker image, CPU and memory, exposed ports, env. variables, logging config).
 * ECS Serice: ensures the container is continously running.
 <br>
@@ -76,7 +76,7 @@
   * GET / (Health check).
   * GET /messages (returns all stored messages).
   * POST /messages (inserts a new message into PostgreSQL).
-* DB initialization: when the app starts, it ensures the required table exists
+* DB initialization: when the app starts, it ensures the required table exists.
 <br>
 
 **8. Building the Docker Image**
@@ -85,14 +85,14 @@
   * App.py
   * Requirements.txt 
 * Build the image from the application directory '(TF directory/app)'. This command creates a Docker image containing the Flask application and its dependencies.<br>
-  <u><b>docker build -t <dockerhub_user>/ecs-flask-api:latest</b></u> .
+  ___docker build -t <dockerhub_user>/ecs-flask-api:latest .___
 <br>
 
 **9. Push the image to Docker Hub**
 * Login to Docker Hub:
-  <u><b><docker login</b></u>
+  ___docker login___
 * Push the image:<br>
-  <u><b>docker push <dockerhub_user>/ecs-flask-api:latest</b></u> <br>
+  ___docker push <dockerhub_user>/ecs-flask-api:latest___ <br>
 * Once uploaded, ECS can download the image directly from Docker Hub.
 <br>
 
