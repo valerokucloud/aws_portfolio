@@ -1,4 +1,4 @@
-**# 1. MyCV (static website using S3)
+# 1. MyCV (static website using S3)
  
 ## Difficulty: Intermediate
 
