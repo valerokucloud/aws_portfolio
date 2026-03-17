@@ -13,8 +13,32 @@ In today's data-driven landscape, transforming raw data into meaningful insights
 
 This guide explores how to connect, prepare, and visualize your datasets using these AWS services. Whether you're a **data analyst**, **developer** , or **business leader** , you'll learn how to leverage QuickSight to create compelling dashboards and make data-driven decisions with ease.
 
+<br>
 
-### Steps: 
+## Tech Stack
+
+- Amazon S3 – Data storage for datasets and manifest files
+- Amazon QuickSight – Data visualization and dashboard creation
+- Terraform – Infrastructure provisioning and automation
+- Kaggle – External dataset source
+- JSON / CSV – Data formats for ingestion and analysis
+<br>
+
+## Architecture:
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Architecture/Architecture.png)
+<br>
+
+## Best Practices
+
+- Store datasets in Amazon S3 to ensure scalable, durable, and highly available data storage.
+- Use manifest files to clearly define data sources and formats when connecting Amazon QuickSight to S3 datasets.
+- Automate infrastructure provisioning with Terraform to ensure reproducibility and consistent environment configuration.
+- Apply proper permission management so that Amazon QuickSight can securely access the required S3 buckets.
+- Perform data preparation and validation before visualization to ensure data quality and accurate analytics.
+- Design clear and interactive dashboards that highlight key insights and allow users to explore the data effectively.
+<br>
+
+## Deployment 
 
 1. **Data Source**: begin by obtaining your dataset. For example, you can use Spotify data on artists and listeners, which is available on platforms like [Kaggle](https://www.kaggle.com/datasets)
 2. **Creating an S3 bucket and uploading data**: set up an S3 bucket, upload dataset files (listeners.csv and listeners.json) and configure the manifest file.
@@ -58,13 +82,19 @@ This guide explores how to connect, prepare, and visualize your datasets using t
 </p>
 <br>
 
+## Project Results
+
+* Successfully stored and managed dataset files in Amazon S3 to enable scalable and reliable data access.
+* Connected Amazon QuickSight to the S3 dataset using a manifest file to create a structured data source.
+* Built interactive visualizations to analyze artist popularity based on listener metrics.
+* Demonstrated how to transform raw dataset files (CSV/JSON) into meaningful visual insights.
+* Implemented an automated infrastructure setup using Terraform to improve reproducibility and deployment efficiency.
+<br>
+
 ## References 
+
 * [Amazon QuickSight Overview](https://docs.aws.amazon.com/quicksight/latest/developerguide/welcome.html?)
 * [Managing user access inside Amazon Quick Suite](https://docs.aws.amazon.com/quicksuite/latest/userguide/managing-users.html?)
 * [Getting started with Amazon QuickSight](https://docs.aws.amazon.com/quicksuite/latest/userguide/quick-sight-getting-started.html?)
 * [Preparing data in Amazon QuickSight](https://docs.aws.amazon.com/quicksuite/latest/userguide/preparing-data.html?)
 <br> 
-
-## Architecture:
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/2.%20Visualizing%20Insights%20with%20QuickSight/Architecture/Architecture.png)
-
