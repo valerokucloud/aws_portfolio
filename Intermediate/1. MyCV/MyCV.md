@@ -1,4 +1,4 @@
-# 1. MyCV (static website using S3)
+**# 1. MyCV (static website using S3)
  
 ## Difficulty: Intermediate
 
@@ -21,13 +21,13 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 
 <br>
 
-## Basic architecture:
+## Basic architecture
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/principal_arch.png)
 
 <br>
 
-## Actual architecture:
+## Actual architecture
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/Final_arch.png)
 
@@ -43,7 +43,7 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 - Use Route 53 for reliable DNS management and easier domain configuration.
 <br>
 
-## Deployment: 
+## Deployment
 
 1. Create an S3 bucket
     * Enable static website hosting
@@ -95,6 +95,6 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 * [AWS Shield mitigation logic for CloudFront and Route 53](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-event-mitigation-logic-continuous-inspection.html)
  
 
-## Output:
+## Output
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/Output.png)
