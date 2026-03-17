@@ -17,7 +17,6 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 - Amazon CloudWatch (Monitoring and Alarms) – Optional
 - AWS WAF (Web Application Firewall) – Optional
 - AWS Shield (DDoS Protection) – Optional
-<br>
 
 ## Basic architecture:
 
@@ -80,7 +79,7 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 * (Optional) Added monitoring with Amazon CloudWatch to track traffic and error metrics.
 * (Optional) Enabled custom domain configuration using Route 53 and AWS Certificate Manager.
 * (Optional) Enhanced security using AWS WAF and AWS Shield to protect against common web threats.
-
+<br>
 
 ## References 
 *[Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
