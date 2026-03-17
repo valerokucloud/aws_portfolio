@@ -26,6 +26,7 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 ## Actual architecture:
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/Final_arch.png)
+
 <br>
 
 ## Best Practices
@@ -82,6 +83,7 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 <br>
 
 ## References 
+
 *[Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
 *[Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
 *[Configuring Amazon Route 53 as your DNS service](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-configuring.html)
