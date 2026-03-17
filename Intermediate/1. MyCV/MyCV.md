@@ -7,6 +7,7 @@
 
  ## Project overview: showcase of your skills, experience and accomplishments to potential employers or clients. 
 This project demonstrates how to deploy a personal CV website using Amazon S3 for static hosting and Amazon CloudFront for global content delivery. It showcases a scalable, secure, and highly available architecture that can be enhanced with monitoring, custom DNS through Route 53, and additional security features such as AWS WAF and AWS Shield.
+
 <br>
 
 ## Tech Stack
@@ -18,9 +19,12 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 - AWS WAF (Web Application Firewall) – Optional
 - AWS Shield (DDoS Protection) – Optional
 
+<br>
+
 ## Basic architecture:
 
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/principal_arch.png)
+
 <br>
 
 ## Actual architecture:
