@@ -5,16 +5,41 @@
 ## Project’s Author 
 * This project was inspired by the book [**AWS Cloud Projects: Strengthen Your AWS Skills Through Practical Projects, from Websites to Advanced AI Applications**](https://www.packtpub.com/en-be/product/aws-cloud-projects-9781835889282) by Ivo Pinto and Pedro Santos.
 * [Antonio Valero](https://www.linkedin.com/in/avalero89/) 
-
-
 <br>
 
-## Project applications: showcase of your skills, experience and accomplishments to potential employers or clients. 
- 
+## Project overview: showcase of your skills, experience and accomplishments to potential employers or clients. 
+This project demonstrates how to design and deploy a fully serverless recipe-sharing web application on AWS using Infrastructure as Code with Terraform. It integrates services such as S3, CloudFront, API Gateway, Lambda, DynamoDB, and Cognito to build a scalable, secure, and globally accessible application with authentication and dynamic backend functionality.
 
-### Steps: 
-
+## Tech Stack
+- Amazon S3 (Static Website Hosting and Asset Storage)
+- Amazon CloudFront (Content Delivery Network)
+- Amazon API Gateway (REST API)
+- AWS Lambda (Serverless Backend)
+- Amazon DynamoDB (NoSQL Database)
+- Amazon Cognito (User Authentication and Authorization)
+- AWS Identity and Access Management - IAM (Access Control)
+- Terraform (Infrastructure as Code)
+- Node.js / npm (Frontend Build Process)
 <br>
+
+## Architecture
+![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/Architecture/principal_arch.png)
+<br>
+
+
+## Best Practices
+
+* Use Infrastructure as Code with Terraform to ensure consistent, reproducible, and automated infrastructure deployments.
+* Deliver static frontend content through Amazon CloudFront to improve global performance and reduce latency.
+* Restrict direct access to S3 buckets by enabling CloudFront Origin Access Control (OAC).
+* Apply the principle of least privilege when defining IAM roles and policies for Lambda functions.
+* Use Amazon Cognito to securely manage user authentication and protect API endpoints.
+* Separate frontend, backend, and data layers to maintain a modular and scalable serverless architecture.
+* Store application data in DynamoDB to leverage automatic scaling and high availability.
+* Use environment variables and configuration files to decouple infrastructure parameters from application code.
+<br>
+
+## Deployment
 
 **1. S3 Bucket Creation**
 * Created an S3 bucket to host the frontend static website.
@@ -73,7 +98,6 @@
 * Defined resources and HTTP methods.
 * Integrated each endpoint with its corresponding Lambda function.
 * Enabled Cognito authorization for protected routes.
-
 <br>
 
 **8. Frontend Configuration**
@@ -101,30 +125,26 @@
 * Once uploaded, access the frontend application through the CloudFront distribution URL.
 
 
-## Result
-* Fully serverless AWS infrastructure.
-* Scalable and cost-efficient architecture.
-* Static frontend delivered globally through CloudFront.
-* Infrastructure fully reproducible using Terraform.
+## Project Results
+
+* Successfully deployed a fully serverless recipe-sharing web application on AWS.
+* Implemented secure user authentication using Amazon Cognito to protect API endpoints.
+* Built a scalable backend using AWS Lambda and Amazon API Gateway to handle application logic.
+* Stored and managed application data efficiently using Amazon DynamoDB.
+* Delivered the frontend globally through Amazon CloudFront with static assets hosted on Amazon S3.
+* Automated the entire infrastructure deployment using Terraform, ensuring reproducibility and easier maintenance.
 
 
 ## References
--[Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)<br>
--[Using Amazon CloudFront](https://docs.aws.amazon.com/cloudfront/)<br>
--[Using Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)<br>
--[Using AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)<br>
--[Using Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)<br>
--[Using Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/)<br>
--[Using AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>
 
- 
-<br>
-
-## Architecture:
-
-![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/3.%20Recipe%20Web%20Application/Architecture/principal_arch.png)
-
-<br>
+* [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)<br>
+* [Using Amazon CloudFront](https://docs.aws.amazon.com/cloudfront/)<br>
+* [Using Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)<br>
+* [Using AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)<br>
+* [Using Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)<br>
+* [Using Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/)<br>
+* [Using AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>
+  <br>
 
 ## Output:
 
