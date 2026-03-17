@@ -29,7 +29,6 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 ![Imagen](https://github.com/valerokucloud/aws_portfolio/blob/main/Intermediate/1.%20MyCV/Final_arch.png)
 <br>
 
-
 ## Best Practices
 
 - Avoid making the S3 bucket publicly accessible by using CloudFront Origin Access Control (OAC).
@@ -83,13 +82,12 @@ This project demonstrates how to deploy a personal CV website using Amazon S3 fo
 * (Optional) Enhanced security using AWS WAF and AWS Shield to protect against common web threats.
 
 
-
 ## References 
--[Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
--[Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
--[Configuring Amazon Route 53 as your DNS service](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-configuring.html)
--[Using AWS WAF with Amazon CloudFront](https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html)
--[AWS Shield mitigation logic for CloudFront and Route 53](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-event-mitigation-logic-continuous-inspection.html)
+*[Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+*[Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+*[Configuring Amazon Route 53 as your DNS service](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-configuring.html)
+*[Using AWS WAF with Amazon CloudFront](https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html)
+*[AWS Shield mitigation logic for CloudFront and Route 53](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-event-mitigation-logic-continuous-inspection.html)
  
 
 ## Output:
