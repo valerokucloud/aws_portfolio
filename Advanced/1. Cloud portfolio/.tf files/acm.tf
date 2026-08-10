@@ -1,4 +1,4 @@
-# ACM certificate creation (us-east-1 always):
+# ACM certificate creation (us-east-1 mandatory):
     resource "aws_acm_certificate" "portfolio" {
         provider = aws.virginia
         domain_name = ['YOUR_DOMAIN'].xxx
