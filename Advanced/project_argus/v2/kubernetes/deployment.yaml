@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: argus
+  namespace: argus
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: argus
+
+  template:
+    metadata:
+      labels:
+        app: argus
+
+    spec:
+      restartPolicy: Always
+      volumes:
+        - name: aws-credentials
+          secret:
+            secretName: aws-credentials
+
+      imagePullSecrets:
+        - name: ecr-secret
+
+      containers:
+        - name: argus
+          image: "[ECR_URI]"
+          imagePullPolicy: Always
+          securityContext:
+            runAsNonRoot: true
+        
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+
+          envFrom:
+            - configMapRef:
+                name: argus-config
+
+            - secretRef:
+                name: argus-secret
+
+          volumeMounts:
+            - name: aws-credentials
+              mountPath: /home/argus/.aws
+              readOnly: true
+
+      

@@ -1,0 +1,27 @@
+# Terraform
+infra/.terraform/
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+infra/terraform.tfvars
+
+# Git
+.git/
+.gitignore
+
+# Python cache
+python/__pycache__/
+python/*.pyc
+*.pyc
+*.pyo
+*.pyd
+
+# Documentation
+doc/
+
+# Env
+.env
+.env.*
+
+# Misc
+README.md
+captures/

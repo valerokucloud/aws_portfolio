@@ -1,0 +1,3 @@
+# Docker mandatory libraries for Argus Project (v2)
+opencv-python==5.0.0.93
+boto3==1.43.46

@@ -1,0 +1,36 @@
+# Base image with Python 3.14 slim:
+FROM python:3.14-slim
+
+# Mandatory library for OpenCV. We realized this when we ran the image:
+RUN apt-get update && \
+    apt-get install -y \
+        libgl1 \
+        libglib2.0-0 \
+        libsm6 \
+        libxext6 \
+        libxrender1 \
+        libxcb1 && \
+    rm -rf /var/lib/apt/lists/*
+
+# Default path:
+WORKDIR /app
+
+# We copy only requirements.txt first so that Docker
+# can reuse this layer if the code changes but the
+# dependencies remain the same.
+COPY requirements.txt .
+
+# Execution during image construction:
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy Python's folder content:
+COPY python/ .
+
+# Specific user for Argus:
+RUN useradd --create-home --uid 1000 argus
+
+# Container wiull run processes like argus instead of root:
+USER 1000
+
+# When container starts up, it will run:
+CMD [ "python","main.py" ]

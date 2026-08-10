@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: ConfigMap
+
+metadata:
+
+  name: argus-config
+  namespace: argus
+
+data:
+
+  AWS_REGION: ""
+  BUCKET_NAME: ""
+  SNS_TOPIC_ARN: ""
+  LOG_LEVEL: "INFO"
