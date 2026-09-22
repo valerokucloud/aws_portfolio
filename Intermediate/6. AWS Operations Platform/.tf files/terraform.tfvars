@@ -1,0 +1,1 @@
+alert_email = "youremail@domain.com"
