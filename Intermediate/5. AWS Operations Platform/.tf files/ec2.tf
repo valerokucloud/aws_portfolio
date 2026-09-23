@@ -14,8 +14,6 @@
       aws_subnet.public_b.id
     ], count.index)
 
-    vpc_security_group_ids = [aws_security_group.ec2.id]
-
     iam_instance_profile = aws_iam_instance_profile.ec2_ssm.name
 
     user_data = <<-EOF
